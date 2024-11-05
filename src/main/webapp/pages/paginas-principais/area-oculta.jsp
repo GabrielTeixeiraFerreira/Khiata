@@ -49,7 +49,7 @@
 
                 <li class="nav-titulo"><a href="#mensagem" onclick="showTab('tab80')">Analytics</a></li>
 
-                <a href="../../index.html">
+                <a href="../../index.jsp">
                     <img class="home" src="../../assets/botao-home-para-interface.png">
                 </a>
             </ul>
