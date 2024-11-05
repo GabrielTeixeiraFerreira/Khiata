@@ -223,7 +223,7 @@ body {
     color: var(--cor-fundo);
     padding: 15px;
     line-height: 1.5;
-    text-align: justify;
+    text-align: start;
   }
 }
 
@@ -625,7 +625,6 @@ iframe {
 .container_card1 {
   grid-area: card1;
   height: 0px;
-  /* margin-bottom: ; */
 }
 
 .container_card2 {

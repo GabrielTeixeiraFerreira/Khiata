@@ -15,7 +15,7 @@
         </div>
 
         <div class="voltar">
-            <a href="../paginas-principais/area-oculta.jsp" class="botao-voltar">
+            <a href="../../index.jsp" class="botao-voltar">
                 <img src="../../assets/voltar.png" alt="Voltar" />
                 <span>Voltar</span>
             </a>

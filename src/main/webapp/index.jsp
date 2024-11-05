@@ -364,7 +364,7 @@
             <div class="card card_1">
                 <div class="contentcard ">
                     <div class="imagem">
-                        <img src="assets/giAndrade.jpg" alt="Pessoa">
+                        <img src="assets/giAndrade.jpeg" alt="Pessoa">
                     </div>
                 </div>
             </div>
