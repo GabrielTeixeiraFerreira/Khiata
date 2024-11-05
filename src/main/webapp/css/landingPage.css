@@ -38,6 +38,8 @@ hr {
 
 body {
   background: linear-gradient(to right, var(--azul), #b49664);
+  overflow-x: hidden; /* Evita rolagem horizontal */
+  user-select: none;
 }
 
 .conteudo-principal {
@@ -96,11 +98,11 @@ body {
   0%,
   100% {
     text-shadow: 0 0 2px #fff, 0 0 4px var(--amareloHover),
-    0 0 6px var(--amareloHover), 0 0 20px var(--amareloHover);
+      0 0 6px var(--amareloHover), 0 0 20px var(--amareloHover);
   }
   50% {
     text-shadow: 0 0 2px #fff, 0 0 2px var(--amareloHover),
-    0 0 9px var(--amareloHover), 0 0 40px var(--amareloHover);
+      0 0 9px var(--amareloHover), 0 0 40px var(--amareloHover);
   }
 }
 
@@ -189,8 +191,7 @@ body {
   color: var(--brancoHover);
   box-shadow: 0px 0px 40px 8px;
 }
-
-/* Conteúdos */
+/* Fim do "Header" */
 
 /* Inicio seção Sobre Nós*/
 
@@ -209,7 +210,7 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 20px auto;
-  max-width: 55%; /* Limita a largura máxima da seção */
+  max-width: 55%;
   gap: 30px;
 
   h3 {
@@ -233,9 +234,8 @@ body {
   min-height: 325px;
   border-radius: 10px;
   overflow: hidden; /* Esconde conteúdo que ultrapassa a borda */
-  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
   transition: 0.5s ease; /* Transição suave para o efeito hover */
-  cursor: pointer;
 }
 
 /* Efeito de escala ao passar o mouse */
@@ -249,8 +249,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 50px;
-  background-color: var(--amareloPrincipal); /* Cor de fundo do ícone */
-  color: var(--cor-fundo); /* Cor do ícone */
+  background-color: var(--amareloPrincipal);
+  color: var(--cor-fundo);
 }
 
 /* Ajusta o tamanho e cor do ícone */
@@ -276,8 +276,7 @@ body {
 
 /* Fim seção sobre nós */
 
-/*
-/* Seção "Projetos" */
+/* Seção "Projetos" - Estilização geral para a seção de projetos */
 .projetos {
   font-family: Arial, sans-serif;
   display: flex;
@@ -286,10 +285,11 @@ body {
   height: 100%;
 }
 
+/* Contêiner principal com elementos decorativos */
 .bolaKhiata {
   position: relative;
   padding: 0;
-  overflow: hidden;
+  overflow: hidden; /* Esconde conteúdo que ultrapassa o contêiner */
   min-height: 100%;
   min-width: 100%;
   display: flex;
@@ -298,14 +298,16 @@ body {
   z-index: 0;
 }
 
+/* Círculos decorativos */
 .bolaKhiata::before,
 .bolaKhiata::after {
-  content: "";
+  content: ""; /* Adiciona um elemento vazio */
   position: absolute;
   border-radius: 50%;
   background: var(--amareloPrincipal);
 }
 
+/* Arruma a posição das bolas*/
 .bolaKhiata::before {
   width: 350px;
   height: 350px;
@@ -320,6 +322,7 @@ body {
   right: -100px;
 }
 
+/* Estilização do conteúdo dentro da seção */
 .contentTMJ {
   display: flex;
   justify-content: space-between;
@@ -331,43 +334,46 @@ body {
   }
 }
 
+/* Estilização para a área da esquerda */
 .left {
   color: var(--brancoHover);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 1;
+  flex: 1; /* Expande para ocupar o máximo de espaço */
   min-width: 300px;
   max-width: 500px;
 }
 
+/* Imagem dentro da área direita */
 .right img {
   width: 100%;
-  filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.925));
+  filter: drop-shadow(
+    4px 4px 4px rgba(255, 255, 255, 0.925)
+  ); /* Sombra para IMAGENS */
 }
 
+/* Estilização da área direita */
 .right {
   width: 40%;
   display: flex;
   align-items: center;
 }
 
+/* Texto descritivo */
 #sobreKhiata {
   margin-top: 15px;
   font-weight: 500;
-  line-height: 1.8;
-  text-align: justify;
+  line-height: 1.8; /* Espaçamento da linha */
+  text-align: justify; /* Texto alinhado */
   font-size: 20px;
 }
 
-/* @media de toda seção de projetos */
+/* Ajustes responsivos para telas menores */
 @media screen and (max-width: 1280px) {
   .bolaKhiata::before,
   .bolaKhiata::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
     background: #faaf544c;
   }
 
@@ -381,13 +387,14 @@ body {
   }
 
   .left {
-    /* min-width: 300px; */
     max-width: 50%;
   }
 }
-/* Fim seção projeto */
+/* Fim da seção "Projetos" */
 
 /* Inicio seção Funcionalidade */
+
+/* Ajustando tela do figma */
 .phone-screen {
   border-radius: 25px;
   border: 2px solid var(--amareloPrincipal);
@@ -396,6 +403,7 @@ body {
   z-index: 99;
 }
 
+/* Ajustando tamanho do Iframe para ficar com tipo uma borda do celular */
 iframe {
   width: 95%;
   height: 95%;
@@ -409,6 +417,7 @@ iframe {
   transition: filter 0.3s ease;
 }
 
+/* Fundo do celular */
 .phone-interactive {
   width: 250px;
   height: 560px;
@@ -417,6 +426,7 @@ iframe {
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.5);
 }
 
+/* Div para deixar o tamanho certo */
 .funcionalidade {
   display: flex;
   flex-direction: column;
@@ -433,6 +443,7 @@ iframe {
   }
 }
 
+/* Responsividade */
 @media screen and (max-width: 430px) {
   /* Ajustes para telas de celulares */
   .funcionalidade {
@@ -484,6 +495,7 @@ iframe {
   z-index: 9999; /* Garante que o pop-up fique sobre outros elementos */
 }
 
+/* Arrumando o tamanho do popup */
 .popup-content {
   background-color: var(--brancoPrincipal);
   margin: 100px auto;
@@ -498,6 +510,7 @@ iframe {
   overflow: hidden;
 }
 
+/* Icone para feixar o popup */
 .close-btn {
   position: absolute;
   top: 10px;
@@ -512,6 +525,7 @@ iframe {
   color: #ff4d4d;
 }
 
+/* Linha */
 .popup-header {
   display: flex;
   justify-content: space-between;
@@ -521,21 +535,25 @@ iframe {
   margin-bottom: 20px;
 }
 
+/* Corpo do popup */
 .popup-body {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.popup-left, .popup-right {
+.popup-left,
+.popup-right {
   flex: 1;
   padding: 2rem;
 }
 
+/* Alinhando parte da esquerda */
 .popup-left {
   text-align: center;
 }
 
+/* Arrumando imagem do popup */
 .popup-left img {
   border-radius: 50%;
   width: 150px;
@@ -581,28 +599,28 @@ iframe {
     margin-top: 5px;
   }
 
-  .popup-body{
+  .popup-body {
     flex-direction: column;
   }
   .popup-left img {
     width: 15%;
     height: auto;
   }
-  .popup-left, .popup-right {
+  .popup-left,
+  .popup-right {
     padding: 0;
   }
-  .popup-right p{
+  .popup-right p {
     font-size: 0.8rem;
     padding: 0 10px;
   }
-  .popup-desc{
+  .popup-desc {
     font-size: 0.8rem;
     padding: 0 25px;
   }
 }
 
 /* FIM DOS POPUPS */
-
 
 .container_card1 {
   grid-area: card1;
@@ -782,6 +800,7 @@ iframe {
 
 /* card code*/
 
+/* Adicionando estilização em todos os cards */
 .container_card1 .card.card1_2,
 .container_card2 .card.card2_2,
 .container_card3 .card.card3_2,
@@ -1180,13 +1199,13 @@ iframe {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Permite que os elementos quebrem linha */
   max-width: 100%;
   margin: auto;
 }
 
 .footer {
-  flex: 1 1 200px;
+  flex: 1 1 200px; /* Cresce e encolhe, largura mínima de 200px */
   padding: 10px;
 }
 
@@ -1209,7 +1228,7 @@ iframe {
 }
 
 .footer ul {
-  list-style: none;
+  list-style: none; /* Remove a marcação da lista */
   padding: 0;
   margin: 0;
 }
@@ -1217,7 +1236,7 @@ iframe {
 .footer ul li a,
 .footer a {
   color: #fff;
-  text-decoration: none;
+  text-decoration: none; /* Remove o sublinhado */
 }
 
 .footer a {
@@ -1225,7 +1244,7 @@ iframe {
 }
 
 .footer a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Sublinha ao passar o mouse */
 }
 
 .footer-bottom {
@@ -1234,7 +1253,7 @@ iframe {
   font-size: 0.9em;
 }
 
-/* Responsividade */
+/* Responsividade para telas menores */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -1243,7 +1262,7 @@ iframe {
   }
 
   .footer {
-    flex: 1 1 100%;
+    flex: 1 1 100%; /* Ajusta para ocupar toda a largura */
     padding: 10px 0;
   }
 
