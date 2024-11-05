@@ -10,18 +10,20 @@ public class Endereco {
     private String cidade;
     private String complemento;
     private int numero;
+    private String apelido;
 
 
 //    ========================================================
 //    Construtor
 
-    public Endereco(String cep, String rua, String estado, String cidade, String complemento, int numero) {
+    public Endereco(String cep, String rua, String estado, String cidade, String complemento, int numero, String apelido) {
         this.cep = cep;
         this.rua = rua;
         this.estado = estado;
         this.cidade = cidade;
         this.complemento = complemento;
         this.numero = numero;
+        this.apelido = apelido;
     }
 
 
@@ -53,8 +55,11 @@ public class Endereco {
         return numero;
     }
 
+    public String getApelido() {
+        return apelido;
+    }
 
-//    ========================================================
+    //    ========================================================
 //    Setters
 
     public void setCep(String cep) {
@@ -94,6 +99,7 @@ public class Endereco {
                 "; Estado: "+estado+
                 "; Cidade: "+cidade+
                 "; Complemento: "+complemento+
-                "; Número: "+numero;
+                "; Número: "+numero+
+                "; Apelido: "+apelido;
     }
 }

@@ -9,7 +9,7 @@ public class EnderecoDAO {
 
 //    =====================================================================================
 //    Método para inserir valores dentro do BD na tabela de endereco
-    public int inserirEndereco(String cep, String rua, String estado, String cidade, int numero){
+    public int inserirEndereco(String cep, String rua, String estado, String cidade, int numero, String apelido){
 
         //Criando objeto para criar a conexao e criar os métodos do BD
         Conexao conexao = new Conexao();
@@ -20,8 +20,8 @@ public class EnderecoDAO {
 
             // Criando a instrução com parametros a definir
             conexao.pstmt = conexao.conn.prepareStatement("insert into endereco " +
-                    "(CEP, RUA, ESTADO, CIDADE, NUMERO) " + // <-- colunas
-                    "values (?,?,?,?,?)"); // <-- parametros
+                    "(CEP, RUA, ESTADO, CIDADE, NUMERO, APELIDO) " + // <-- colunas
+                    "values (?,?,?,?,?,?)"); // <-- parametros
 
 //            Setando os parametros
             conexao.pstmt.setString(1,cep);
@@ -29,6 +29,7 @@ public class EnderecoDAO {
             conexao.pstmt.setString(3,estado);
             conexao.pstmt.setString(4,cidade);
             conexao.pstmt.setInt(5,numero);
+            conexao.pstmt.setString(6, apelido);
 
             return conexao.pstmt.executeUpdate(); // Executando e retornando a quantidade de linhas que mudaram
 
@@ -42,37 +43,38 @@ public class EnderecoDAO {
 
 //    --------------------------------------------------------
 //    Método extra que inclui endereço com complemento
-public int inserirEndereco(String cep, String rua, String estado, String cidade, String complemento,int numero){
+    public int inserirEndereco(String cep, String rua, String estado, String cidade, String complemento,int numero, String apelido){
 
-    //Criando objeto para criar a conexao e criar os métodos do BD
-    Conexao conexao = new Conexao();
+        //Criando objeto para criar a conexao e criar os métodos do BD
+        Conexao conexao = new Conexao();
 
-    conexao.conectar(); //Abrindo a conexão com BD
+        conexao.conectar(); //Abrindo a conexão com BD
 
-    try {
+        try {
 
-        // Criando a instrução com parametros a definir
-        conexao.pstmt = conexao.conn.prepareStatement("insert into endereco " +
-                "(CEP, RUA, ESTADO, CIDADE, COMPLEMENTO, NUMERO) " + // <-- colunas
-                "values (?,?,?,?,?,?)"); // <-- parametros
+            // Criando a instrução com parametros a definir
+            conexao.pstmt = conexao.conn.prepareStatement("insert into endereco " +
+                    "(CEP, RUA, ESTADO, CIDADE, COMPLEMENTO, NUMERO, APELIDO) " + // <-- colunas
+                    "values (?,?,?,?,?,?,?)"); // <-- parametros
 
-//            Setando os parametros
-        conexao.pstmt.setString(1,cep);
-        conexao.pstmt.setString(2, rua);
-        conexao.pstmt.setString(3,estado);
-        conexao.pstmt.setString(4,cidade);
-        conexao.pstmt.setString(5, complemento);
-        conexao.pstmt.setInt(6,numero);
+    //            Setando os parametros
+            conexao.pstmt.setString(1,cep);
+            conexao.pstmt.setString(2, rua);
+            conexao.pstmt.setString(3,estado);
+            conexao.pstmt.setString(4,cidade);
+            conexao.pstmt.setString(5, complemento);
+            conexao.pstmt.setInt(6,numero);
+            conexao.pstmt.setString(7, apelido);
 
-        return conexao.pstmt.executeUpdate(); // Executando e retornando a quantidade de linhas que mudaram
+            return conexao.pstmt.executeUpdate(); // Executando e retornando a quantidade de linhas que mudaram
 
-    }catch (SQLException sqle){
-        sqle.printStackTrace();
-        return -1; //Retornando um número negativo que indica que ocorreu um problema com o BD
-    }finally {
-        conexao.desconectar();//Fechando a conexão com BD
+        }catch (SQLException sqle){
+            sqle.printStackTrace();
+            return -1; //Retornando um número negativo que indica que ocorreu um problema com o BD
+        }finally {
+            conexao.desconectar();//Fechando a conexão com BD
+        }
     }
-}
 
 
 
@@ -192,7 +194,8 @@ public int inserirEndereco(String cep, String rua, String estado, String cidade,
                                     conexao.rs.getString("ESTADO"),
                                     conexao.rs.getString("CIDADE"),
                                     conexao.rs.getString("COMPLEMENTO"),
-                                    conexao.rs.getInt("NUMERO")); //Retornando o objeto
+                                    conexao.rs.getInt("NUMERO"),
+                                    conexao.rs.getString("APELIDO")); //Retornando o objeto
             }
 
             return null;
