@@ -1,174 +1,184 @@
+/* Importando a fonte Poppins do Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* HEADER */
 /* ------------------------------------- */
-/* Definição / Paletade cores */
+
+/* Definindo a paleta de cores utilizando variáveis CSS */
 :root {
-  --cor-primaria: #f6c44e;
-  --cor-primaria-hover: #fcbf60;
-  --cor-secundaria: #514869;
-  --cor-secundaria-hover: #424769;
-  --cor-fundo: #f6f6f6;
-  --cor-branca: #ffffff;
+  --cor-primaria: #f6c44e; /* Cor primária */
+  --cor-primaria-hover: #fcbf60; /* Cor primária ao passar o mouse */
+  --cor-secundaria: #514869; /* Cor secundária */
+  --cor-secundaria-hover: #424769; /* Cor secundária ao passar o mouse */
+  --cor-fundo: #f6f6f6; /* Cor de fundo */
+  --cor-branca: #ffffff; /* Cor branca */
 }
 
 /* Estilos básicos para o corpo e HTML */
 body,
 html {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins";
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+  font-family: "Poppins"; /* Define a fonte como Poppins */
   background: linear-gradient(
     to right,
     var(--cor-secundaria),
-    var(--cor-primaria-hover)
+    /* Gradiente de fundo da cor secundária para a primária ao passar o mouse */
+      var(--cor-primaria-hover)
   );
+  user-select: none;
 }
 
 /* Estilo do cabeçalho */
 header {
-  width: 100%;
-  background-color: var(--cor-primaria);
-  color: white;
-  box-shadow: 0px 0px 8px 0px black;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  width: 100%; /* Cabeçalho ocupa toda a largura */
+  background-color: var(--cor-primaria); /* Cor de fundo do cabeçalho */
+  color: white; /* Cor do texto no cabeçalho */
+  box-shadow: 0px 0px 8px 0px black; /* Sombra ao redor do cabeçalho */
+  position: -webkit-sticky; /* Fixa o cabeçalho ao rolar para baixo */
+  position: sticky; /* Fixa o cabeçalho ao rolar para baixo */
+  top: 0; /* Fixa o cabeçalho no topo */
+  z-index: 100; /* Define a prioridade de sobreposição */
 }
 
 header ul {
-  display: flex;
-  align-items: center;
+  display: flex; /* Exibe os itens em linha */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
 }
 
 /* Menu de navegação */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 13vh;
+  display: flex; /* Exibe a barra de navegação em linha */
+  justify-content: space-between; /* Espaça os itens uniformemente */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  height: 13vh; /* Altura da barra de navegação */
 }
 
 /* Logo da empresa */
 .title {
-  width: 30%;
-  height: auto;
+  width: 30%; /* Largura do título */
+  height: auto; /* Altura automática */
 }
 
 .title img {
-  width: 50%;
-  margin: 4% 0 0 15%;
+  width: 50%; /* Largura da imagem do logo */
+  margin: 4% 0 0 15%; /* Margem em torno da imagem */
 }
 
 .nav-titulo {
-  width: 100%;
-  text-align: center;
-  font-size: 120%;
-  margin-left: -10vh;
-  padding: 0 60px 0 60px;
+  width: 100%; /* Largura total */
+  text-align: center; /* Alinha o texto ao centro */
+  font-size: 120%; /* Tamanho da fonte */
+  margin-left: -10vh; /* Margem negativa à esquerda */
+  padding: 0 60px; /* Preenchimento lateral */
 }
 
 .nav-titulo a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  transition: 0.5s all;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: rgb(255, 255, 255); /* Cor do texto dos links */
+  transition: 0.5s all; /* Transição suave para efeitos de hover */
 }
 
 .nav-titulo a:hover {
-  color: var(--cor-secundaria-hover);
+  color: var(--cor-secundaria-hover); /* Cor dos links ao passar o mouse */
 }
 
-/* Tirando bolinhas dos links */
+/* Remove as bolinhas dos links */
 .nav-links {
-  list-style: none;
-  margin-bottom: 35%;
-  margin: 0;
-  padding: 20px;
+  list-style: none; /* Remove os marcadores da lista */
+  margin-bottom: 35%; /* Margem inferior */
+  margin: 0; /* Remove margens padrão */
+  padding: 20px; /* Preenchimento em torno da lista */
 }
-/* Estilizando os links e posicionando de maneira que fique bom */
 
-/* Estilizando icone */
+/* Estilizando os ícones de links */
 .home {
-  padding: 12.5px;
-  border-radius: 25px;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  fill: var(--cor-branca);
+  padding: 12.5px; /* Preenchimento interno do ícone */
+  border-radius: 25px; /* Cantos arredondados */
+  width: 40px; /* Largura do ícone */
+  height: 40px; /* Altura do ícone */
+  cursor: pointer; /* Cursor em forma de ponteiro ao passar sobre o ícone */
+  fill: var(--cor-branca); /* Cor do ícone */
 }
 
-/* Hover */
+/* Efeito hover para o ícone */
 .home:hover {
-  background-color: var(--cor-primaria-hover);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-  transition: 0.5s all;
+  background-color: var(
+    --cor-primaria-hover
+  ); /* Cor de fundo ao passar o mouse */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+  transition: 0.5s all; /* Transição suave para efeitos de hover */
 }
 
-/* Estilos para o ícone de hambúrguer */
+/* Estilos para o ícone de hambúrguer (menu responsivo) */
 .hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  padding: 10px;
-  margin-right: 20px;
+  display: none; /* Inicialmente escondido */
+  flex-direction: column; /* Exibe as barras em coluna */
+  cursor: pointer; /* Cursor em forma de ponteiro ao passar sobre o ícone */
+  padding: 10px; /* Preenchimento em torno do ícone */
+  margin-right: 20px; /* Margem à direita */
 }
 
-/* Barras do ícone do menu */
+/* Estilos das barras do ícone do menu */
 .bar {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 4px 0;
-  transition: 0.6s;
+  width: 25px; /* Largura da barra */
+  height: 3px; /* Altura da barra */
+  background-color: white; /* Cor da barra */
+  margin: 4px 0; /* Margem entre as barras */
+  transition: 0.6s; /* Transição suave para efeitos de hover */
 }
 
-/* Colocando responsividade caso tela reduza de tamanho, o iconee do hamburger aparecerá caso a tela estiver com 1280px ou menor */
+/* Responsividade para telas menores que 1280px */
 @media (max-width: 1280px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden; /* Remove a rolagem horizontal */
   }
 
   #perfil img:hover {
-    background-color: var(--cor-primaria);
+    background-color: var(
+      --cor-primaria
+    ); /* Cor de fundo ao passar o mouse sobre a imagem do perfil */
   }
 
   header .nav-links {
-    position: fixed;
-    display: none;
-    position: absolute;
-    top: 99%;
-    right: 0;
-    background-color: var(--cor-primaria);
-    flex-direction: column-reverse;
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
-    padding: 2%;
-    z-index: 999;
+    position: fixed; /* Fixa a lista de links */
+    display: none; /* Inicialmente escondido */
+    position: absolute; /* Posiciona a lista de links */
+    top: 99%; /* Posiciona a lista logo abaixo do cabeçalho */
+    right: 0; /* Alinha à direita */
+    background-color: var(--cor-primaria); /* Cor de fundo da lista de links */
+    flex-direction: column-reverse; /* Exibe os links em coluna, do fundo para o topo */
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3); /* Sombra para a lista de links */
+    padding: 2%; /* Preenchimento interno */
+    z-index: 999; /* Prioridade de sobreposição */
   }
 
   .title {
-    width: 32%;
+    width: 32%; /* Largura do título em telas menores */
   }
+
   .nav-titulo {
-    flex-grow: 1;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    flex-grow: 1; /* Permite que o título cresça */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimento */
   }
 
   header .nav-links.active {
-    display: flex;
+    display: flex; /* Exibe a lista de links quando ativa */
   }
 
   .hamburger {
-    display: flex;
-    transition: 0.5s;
+    display: flex; /* Exibe o ícone do hambúrguer em telas menores */
+    transition: 0.5s; /* Transição suave para efeitos de hover */
   }
 
   .hamburger:hover {
-    background-color: var(--cor-primaria-hover);
-    border-radius: 10px;
-    transition: 0.5s;
+    background-color: var(
+      --cor-primaria-hover
+    ); /* Cor de fundo ao passar o mouse sobre o ícone */
+    border-radius: 10px; /* Cantos arredondados ao passar o mouse */
+    transition: 0.5s; /* Transição suave */
   }
 }
 
@@ -176,53 +186,64 @@ header ul {
 
 /* CONTEÚDO */
 /* ------------------------------------- */
+
+/* Estilo para o conteúdo principal */
 .main-content {
-  color: #f6f6f6;
-  display: flex;
-  margin-left: 4%;
+  color: #f6f6f6; /* Cor do texto do conteúdo */
+  display: flex; /* Exibe os itens em linha */
+  margin-left: 4%; /* Margem à esquerda */
 }
+
+/* Estilo para os itens de conteúdo */
 .content-item {
-  list-style: none;
-  display: inline;
-  padding-right: 20px;
-  text-decoration: none;
-  z-index: 999;
+  list-style: none; /* Remove marcadores da lista */
+  display: inline; /* Exibe os itens em linha */
+  padding-right: 20px; /* Preenchimento à direita */
+  text-decoration: none; /* Remove sublinhado dos links */
+  z-index: 999; /* Prioridade de sobreposição */
 }
 
 .content-item a {
-  width: 40%;
-  text-decoration: none;
-  color: var(--cor-secundaria);
-  background-color: #f6c44e;
-  padding: 13px;
-  border-radius: 8px;
-  transition: 0.5s;
-  font-weight: bold;
-  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  width: 40%; /* Largura dos links */
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: var(--cor-secundaria); /* Cor do texto dos links */
+  background-color: #f6c44e; /* Cor de fundo dos links */
+  padding: 13px; /* Preenchimento interno dos links */
+  border-radius: 8px; /* Cantos arredondados */
+  transition: 0.5s; /* Transição suave para efeitos de hover */
+  font-weight: bold; /* Texto em negrito */
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5); /* Sombra para os links */
+  z-index: 999; /* Prioridade de sobreposição */
 }
 
 .content-item a:hover {
-  background-color: var(--cor-primaria-hover);
-  /* transform: translate(50px, 50px); */
-  color: #f6f6f6;
+  background-color: var(
+    --cor-primaria-hover
+  ); /* Cor de fundo ao passar o mouse sobre os links */
+  color: #f6f6f6; /* Cor do texto ao passar o mouse */
 }
 
 .tab-content {
-  display: none;
+  display: none; /* Oculta o conteúdo das abas */
 }
 
 .tab-content.active {
-  display: block;
-  width: 100%;
+  display: block; /* Exibe o conteúdo da aba ativa */
+  width: 100%; /* Largura total */
 }
 
+/* Estilos para o cabeçalho e parágrafos das informações */
 .info h1 {
-  font-size: 200%;
+  font-size: 200%; /* Tamanho da fonte do cabeçalho */
 }
 
 .info p {
-  font-size: 120%;
+  font-size: 120%; /* Tamanho da fonte dos parágrafos */
+}
+
+/* Estilos para as imagens utilizadas em cada página */
+.imgs {
+  filter: drop-shadow(3px 3px 3px black); /* Sombra projetada nas imagens */
 }
 
 /* Imagens utilizadas em cada pagina */
@@ -230,11 +251,11 @@ header ul {
   filter: drop-shadow(3px 3px 3px black);
 }
 
-#user,
 #endereco {
   position: relative;
   left: 120%;
 }
+
 #tipo-curso {
   position: relative;
   left: 100%;
@@ -264,10 +285,13 @@ header ul {
   #pref,
   #analytics,
   #endereco,
-  #endereco,
-  #user {
+  #endereco {
     left: 50%;
     transform: translateX(100%);
+  }
+  #user {
+    position: relative;
+    left: 70%;
   }
   #admin {
     left: 65%;
@@ -313,29 +337,32 @@ header ul {
 
 /* -------------------------------------------- */
 
-/* Estilizando os botões e o forms */
-
+/* Estilizando botões e formulários */
 button {
-  background: var(--cor-primaria);
-  border-color: #faaf54;
-  border-radius: 10px;
-  width: 160px;
-  padding: 5px;
-  margin: 15px 0 10px 0;
+  background: var(--cor-primaria); /* Cor de fundo do botão */
+  border-color: #faaf54; /* Cor da borda do botão */
+  border-radius: 10px; /* Cantos arredondados */
+  width: 160px; /* Largura do botão */
+  padding: 5px; /* Preenchimento interno */
+  margin: 15px 0 10px 0; /* Margens superior e inferior */
   white-space: nowrap; /* Garante que o texto fique em uma linha só */
 }
+
 button:hover {
-  background: var(--cor-primaria-hover);
+  background: var(
+    --cor-primaria-hover
+  ); /* Cor de fundo ao passar o mouse sobre o botão */
 }
 
 input {
-  border-radius: 5px;
+  border-radius: 5px; /* Cantos arredondados dos campos de input */
 }
 
+/* Responsividade para telas menores que 768px */
 @media screen and (max-width: 768px) {
   .content-item {
-    display: block;
-    margin-bottom: 35px;
+    display: block; /* Exibe os itens de conteúdo em bloco */
+    margin-bottom: 35px; /* Margem inferior */
   }
 }
 
