@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* HEADER */
+/* ------------------------------------- */
+/* Definição / Paletade cores */
+:root {
+  --cor-primaria: #f6c44e;
+  --cor-primaria-hover: #fcbf60;
+  --cor-secundaria: #514869;
+  --cor-secundaria-hover: #424769;
+  --cor-fundo: #f6f6f6;
+  --cor-branca: #ffffff;
+}
+
+/* Estilos básicos para o corpo e HTML */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  background: linear-gradient(
+    to right,
+    var(--cor-secundaria),
+    var(--cor-primaria-hover)
+  );
+}
+
+/* Estilo do cabeçalho */
+header {
+  width: 100%;
+  background-color: var(--cor-primaria);
+  color: white;
+  box-shadow: 0px 0px 8px 0px black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu de navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13vh;
+}
+
+/* Logo da empresa */
+.title {
+  width: 30%;
+  height: auto;
+}
+
+.title img {
+  width: 50%;
+  margin: 4% 0 0 15%;
+}
+
+.nav-titulo {
+  width: 100%;
+  text-align: center;
+  font-size: 120%;
+  margin-left: -10vh;
+  padding: 0 60px 0 60px;
+}
+
+.nav-titulo a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.5s all;
+}
+
+.nav-titulo a:hover {
+  color: var(--cor-secundaria-hover);
+}
+
+/* Tirando bolinhas dos links */
+.nav-links {
+  list-style: none;
+  margin-bottom: 35%;
+  margin: 0;
+  padding: 20px;
+}
+/* Estilizando os links e posicionando de maneira que fique bom */
+
+/* Estilizando icone */
+.home {
+  padding: 12.5px;
+  border-radius: 25px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  fill: var(--cor-branca);
+}
+
+/* Hover */
+.home:hover {
+  background-color: var(--cor-primaria-hover);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  transition: 0.5s all;
+}
+
+/* Estilos para o ícone de hambúrguer */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+/* Barras do ícone do menu */
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.6s;
+}
+
+/* Colocando responsividade caso tela reduza de tamanho, o iconee do hamburger aparecerá caso a tela estiver com 1280px ou menor */
+@media (max-width: 1280px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #perfil img:hover {
+    background-color: var(--cor-primaria);
+  }
+
+  header .nav-links {
+    position: fixed;
+    display: none;
+    position: absolute;
+    top: 99%;
+    right: 0;
+    background-color: var(--cor-primaria);
+    flex-direction: column-reverse;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 2%;
+    z-index: 999;
+  }
+
+  .title {
+    width: 32%;
+  }
+  .nav-titulo {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  header .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    transition: 0.5s;
+  }
+
+  .hamburger:hover {
+    background-color: var(--cor-primaria-hover);
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+}
+
+/* ------------------------------------- */
+
+/* CONTEÚDO */
+/* ------------------------------------- */
+.main-content {
+  color: #f6f6f6;
+  display: flex;
+  margin-left: 4%;
+}
+.content-item {
+  list-style: none;
+  display: inline;
+  padding-right: 20px;
+  text-decoration: none;
+  z-index: 999;
+}
+
+.content-item a {
+  width: 40%;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  background-color: #f6c44e;
+  padding: 13px;
+  border-radius: 8px;
+  transition: 0.5s;
+  font-weight: bold;
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.content-item a:hover {
+  background-color: var(--cor-primaria-hover);
+  /* transform: translate(50px, 50px); */
+  color: #f6f6f6;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  width: 100%;
+}
+
+.info h1 {
+  font-size: 200%;
+}
+
+.info p {
+  font-size: 120%;
+}
+
+/* Imagens utilizadas em cada pagina */
+.imgs {
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+#user,
+#endereco {
+  position: relative;
+  left: 120%;
+}
+#tipo-curso {
+  position: relative;
+  left: 100%;
+}
+
+#categoria,
+#pref,
+#analytics {
+  position: relative;
+  left: 125%;
+}
+#curso {
+  position: relative;
+  left: 150%;
+}
+
+#admin {
+  position: relative;
+  left: 80%;
+}
+
+@media screen and (max-width: 1550px) {
+  /* Posicionando os elementos */
+  #categoria,
+  #tipo-curso,
+  #curso,
+  #pref,
+  #analytics,
+  #endereco,
+  #endereco,
+  #user {
+    left: 50%;
+    transform: translateX(100%);
+  }
+  #admin {
+    left: 65%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* Posicionando os elementos */
+  #categoria,
+  #tipo-curso,
+  #curso,
+  #pref,
+  #analytics,
+  #endereco,
+  #endereco,
+  #user {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Posicionando os elementos */
+  .imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin: 30px;
+    padding: 10px;
+  }
+
+  #categoria,
+  #tipo-curso,
+  #curso,
+  #pref,
+  #analytics,
+  #endereco,
+  #endereco,
+  #user,
+  #admin {
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+/* -------------------------------------------- */
+
+/* Estilizando os botões e o forms */
+
+button {
+  background: var(--cor-primaria);
+  border-color: #faaf54;
+  border-radius: 10px;
+  width: 160px;
+  padding: 5px;
+  margin: 15px 0 10px 0;
+  white-space: nowrap; /* Garante que o texto fique em uma linha só */
+}
+button:hover {
+  background: var(--cor-primaria-hover);
+}
+
+input {
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .content-item {
+    display: block;
+    margin-bottom: 35px;
+  }
+}
+
+/* ------------------------------------- */

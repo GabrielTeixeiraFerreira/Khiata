@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Definindo as cores */
+:root {
+  --brancoHover: #ebebeb;
+  --azul: #384384;
+  --amareloPrincipal: #fac552;
+}
+
+/* Deixando a tabela no meio da tela e deixando o fundo com gradiente */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, var(--azul), var(--amareloPrincipal));
+}
+
+/* Botão para voltar para página oculta */
+.voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.botao-voltar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--azul);
+  color: var(--brancoHover);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botao-voltar img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.botao-voltar span {
+  margin-left: 5px;
+}
+
+.botao-voltar:hover {
+  background-color: var(--amareloPrincipal);
+  color: var(--azul);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+/* Fim do botão de voltar*/
+
+/* Fazendo tabela responsiva */
+.table-content {
+  max-height: 80%;
+  min-width: 60%;
+  max-width: 80%;
+  overflow: auto;
+  border: 3px solid #384384;
+
+  border-radius: 15px;
+  text-align: center;
+
+  box-shadow: 0px 4px 4px 0px black;
+}
+
+/* Definindo as propriedas da tabela e suas células */
+table {
+  background-color: var(--brancoHover);
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 10px;
+  border: 1px solid #384384;
+  font-size: 1.5rem;
+  color: var(--brancoHover);
+}
+
+tr:nth-child(odd) {
+  background-color: #8f96bd;
+}
+
+tr:nth-child(even) {
+  background-color: #4b5aaf;
+}
+
+th {
+  font-weight: 600;
+  font-size: 2rem;
+  background-color: var(--azul);
+}
+
+img {
+  width: 300px;
+}

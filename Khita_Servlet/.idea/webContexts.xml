@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/index.html" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/login.html" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/pages/paginas-mostrar/area-oculta-mostrar-administrador.jsp" value="file://$PROJECT_DIR$/src/main/webapp/pages/paginas-mostrar" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/pages/paginas-principais/area-oculta.html" value="file://$PROJECT_DIR$/src/main/webapp/pages/paginas-principais" />
+      </map>
+    </option>
+  </component>
+</project>

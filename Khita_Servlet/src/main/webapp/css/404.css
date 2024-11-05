@@ -1,0 +1,67 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #424769;
+    text-align: center;
+    color: white;
+}
+
+/* Estilizando o container .erro */
+
+.erro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    bottom: 20%;
+}
+
+.erro h1 {
+    font-size: 210px;
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+/* Estilizando o link */
+
+.erro a {
+    text-decoration: none;
+    color: white;
+    background-color: #fac552;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.erro a:hover {
+    background-color: #fdbb2c;
+
+}
+
+/* Estilizando a imagem */
+
+.erro-img {
+    display: flex;
+    width: 30%;
+    position: relative;
+    left: 20%;
+}
+
+.erro-img img {
+    width: 110%;
+}
+
+/* Definindo as carcteristicas do container principal */
+
+.error-container {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+.erro-img{
+    display: none;
+}
+
+}

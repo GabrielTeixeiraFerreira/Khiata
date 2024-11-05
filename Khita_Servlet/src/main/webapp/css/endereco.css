@@ -1,0 +1,235 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.transicao {
+    font-family: Raleway, sans-serif;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#container {
+    display: flex;
+}
+
+.container-arrow {
+    width: 500px;
+}
+
+.card-container {
+    perspective: 50em;
+    width: 500px;
+    height: 550px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    color: white;
+    transform: rotateY(0deg) rotateX(5deg);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+
+    &:hover {
+        transform: rotateY(-3deg) rotateX(-5deg) rotateZ(0.2deg);
+    }
+}
+
+.layers {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-radius: 0.5em;
+    height: 100%;
+    transform-style: preserve-3d;
+    background-color: orange;
+    z-index: -1;
+}
+
+.layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    transform: translateZ(var(--tz));
+    box-shadow: 0 0 0.5em #000d inset;
+
+    &:last-child {
+        box-shadow: 0 0 0.5em #000d inset, 0 0 5px #000;
+    }
+}
+
+/* oi */
+
+
+.arrow {
+    position: relative;
+    top: 35%;
+    left: -5%;
+    transform: translate(-50%, -50%);
+    transform: rotate(270deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arrow span {
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    border-bottom: 8px solid black;
+    border-right: 8px solid black;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -5s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+/* button */
+.button-container {
+    width: 0;
+}
+
+.button {
+    position: relative;
+    top: 65VH;
+    left: 12vh;
+}
+
+button {
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    width: 16.3rem;
+    padding: 1rem 3rem;
+    transition: tranform 6s ease-in;
+}
+
+button:hover {
+    letter-spacing: 0.2rem;
+    padding: 1.1rem 3.1rem;
+    background: var(--clr);
+    color: var(--clr);
+    /* box-shadow: 0 0 35px var(--clr); */
+    animation: box 3s infinite;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #272822;
+}
+
+button span {
+    position: relative;
+    z-index: 1;
+}
+
+button i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+button i::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 80%;
+    top: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
+}
+
+button:hover i::before {
+    width: 15px;
+    left: 20%;
+    animation: move 3s infinite;
+}
+
+button i::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 20%;
+    bottom: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
+}
+
+button:hover i::after {
+    width: 15px;
+    left: 80%;
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes box {
+    0% {
+        box-shadow: #27272c;
+    }
+
+    50% {
+        box-shadow: 0 0 25px var(--clr);
+    }
+
+    100% {
+        box-shadow: #27272c;
+    }
+}
