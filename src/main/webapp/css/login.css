@@ -102,6 +102,42 @@ body {
     } */
 }
 
+/* Botão para voltar para página oculta */
+.voltar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.botao-voltar{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--azul);
+    color: var(--brancoHover);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botao-voltar img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.botao-voltar span {
+    margin-left: 5px;
+}
+
+.botao-voltar:hover {
+    background-color: var(--amareloPrincipal);
+    color: var(--azul);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 @media screen and (max-width: 850px) {
   .content {
     width: 100%;
