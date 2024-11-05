@@ -1,67 +1,78 @@
+/* Define a estilização geral do elemento <body>, removendo as margens e preenchimentos,
+definindo a cor de fundo, centralizando o texto e alterando a cor da fonte para branco */
+:root {
+  --cor-primaria: #faaf54;
+  --cor-primaria-hover: #fcbf60;
+  --cor-secundaria: #514869;
+  --cor-secundaria-hover: #424769;
+  --cor-fundo: #f6f6f6;
+  --cor-branca: #ffffff;
+  --cor-preta: #000;
+}
+
 body {
-    padding: 0;
-    margin: 0;
-    background-color: #424769;
-    text-align: center;
-    color: white;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--cor-secundaria-hover);
+  text-align: center;
+  color: var(--cor-branca);
 }
 
-/* Estilizando o container .erro */
-
+/* Estilizando o container .erro para alinhamento central e espaçamento */
 .erro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    bottom: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  bottom: 20%;
 }
 
+/* Estilizando o título principal dentro do container .erro */
 .erro h1 {
-    font-size: 210px;
-    margin-top: 10%;
-    margin-bottom: 0;
+  font-size: 210px;
+  margin-top: 10%;
+  margin-bottom: 0; /* Remove o espaçamento inferior */
 }
 
-/* Estilizando o link */
-
+/* Estilizando o link dentro do container .erro */
 .erro a {
-    text-decoration: none;
-    color: white;
-    background-color: #fac552;
-    padding: 12px;
-    border-radius: 20px;
-    cursor: pointer;
-
+  text-decoration: none;
+  color: white;
+  background-color: var(--cor-primaria);
+  padding: 12px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
+/* Efeito hover para o link, mudando a cor de fundo */
 .erro a:hover {
-    background-color: #fdbb2c;
-
+  background-color: var(--cor-primaria-hover);
 }
 
-/* Estilizando a imagem */
-
+/* Estilizando a imagem no container .erro-img */
 .erro-img {
-    display: flex;
-    width: 30%;
-    position: relative;
-    left: 20%;
+  display: flex;
+  width: 30%;
+  position: relative;
+  left: 20%;
 }
 
+/* Estilizando a imagem para que ocupe mais espaço */
 .erro-img img {
-    width: 110%;
+  width: 110%; /* Aumenta a largura da imagem para além do container */
 }
 
-/* Definindo as carcteristicas do container principal */
-
+/* Definindo a estrutura do container principal que engloba todos os elementos */
 .error-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
+/* Estilizações para dispositivos menores, ocultando a imagem para melhor visualização */
 @media screen and (max-width: 900px) {
-.erro-img{
+  .erro-img {
+    /* Esconde a imagem em telas menores */
     display: none;
-}
-
+  }
 }
