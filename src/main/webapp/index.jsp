@@ -145,7 +145,6 @@
                     coletivo para atingir o futuro mais sustentável.
                 </li>
             </ul>
-            </p>
         </div>
     </div>
 </div>
@@ -382,7 +381,7 @@
                     </div>
                     <div class="popup-body">
                         <div class="popup-left">
-                            <img src="assets/giAndrade.jpg" alt="Foto da Pessoa 4" class="modal-img">
+                            <img src="assets/giAndrade.jpeg" alt="Foto da Pessoa 4" class="modal-img">
                             <p class="popup-desc">
                                 Estudante do Germinare Tech - Desenvolvedora do app Khiata -
                                 Pretende seguir ramo de Análise de Dados.

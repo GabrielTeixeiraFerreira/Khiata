@@ -113,8 +113,8 @@ body {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    background-color: var(--azul);
-    color: var(--brancoHover);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
@@ -133,8 +133,8 @@ body {
 }
 
 .botao-voltar:hover {
-    background-color: var(--amareloPrincipal);
-    color: var(--azul);
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
