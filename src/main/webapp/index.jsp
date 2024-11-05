@@ -10,29 +10,34 @@
 </head>
 <body>
 
-
+<!-- Inicio do "header" -->
 <div class="conteudo-principal">
-
+    <!-- Link para a página de login com um ícone -->
     <a href="${pageContext.request.contextPath}/pages/paginas-principais/login.jsp" class="login">
         <img src="assets/pessoa.svg" alt="">
     </a>
 
+    <!-- Container de texto central -->
     <div class="texto">
         <div class="logo">
+            <!-- Logo da empresa -->
             <img src="assets/LogoKhiata_branco.png" alt="">
         </div>
 
+        <!-- Conteúdo principal com um título e botões -->
         <div class="conteudo">
-            <h1>Transformando o <strong>mundo</strong> de <em><strong>ponto</strong></em> em <em> <strong>ponto</strong></em></h1>
+            <h1>Transformando o <strong>mundo</strong> de <em><strong>ponto</strong></em> em <em><strong>ponto</strong></em></h1>
             <br><br><br>
 
             <div class="botoes">
+                <!-- Botões para rolar para seções específicas da página -->
                 <a href="#sobre">Sobre nós</a>
                 <a href="#contatos">Nossa equipe</a>
             </div>
         </div>
     </div>
 
+    <!-- Imagem decorativa ao lado do texto -->
     <div class="imagemPrimeiro">
         <img src="assets/imagemFrente.webp" alt="">
     </div>
@@ -40,11 +45,10 @@
 <hr>
 <br><br><br><br><br><br>
 
+<!-- Fim do Header -->
 
-
-
-
-
+<!-- Inicio da seção "Sobre Nós" -->
+ <!-- Container com o título da seção -->
 <div class="sobre" id="sobre">
     <h1>Sobre Nós</h1>
 </div>
@@ -169,8 +173,6 @@
             <div class="right">
                 <img src="assets/TMJlogo.png" alt="">
             </div>
-
-
         </div>
     </div>
 </div>
@@ -227,7 +229,7 @@
                     <div class="popup-body">
                         <div class="popup-left">
                             <img src="assets/caio.jpg" alt="Foto da Pessoa 1" class="modal-img">
-                            <Atua class="popup-desc">
+                            <p class="popup-desc">
                                 Estudante do Germinare Tech - Desenvolvedor do app Khiata - Pretende seguir ramo de
                                 Análise
                                 de Dados.Atua na área de desenvolvimento do site, também na parte de lógica de
@@ -242,7 +244,7 @@
                             <p><strong>Função:</strong> Desenvolvedor do site</p>
                             <p>
                                 <strong>Descrição da Função:</strong> Responsável por
-                                desenvolver o site, principalemnte na área de cards.
+                                desenvolver o site, principalmente na área de cards.
                             </p>
                         </div>
                     </div>
@@ -362,7 +364,7 @@
             <div class="card card_1">
                 <div class="contentcard ">
                     <div class="imagem">
-                        <img src="assets/giovannaAndrade.png    " alt="Pessoa">
+                        <img src="assets/giAndrade.jpg" alt="Pessoa">
                     </div>
                 </div>
             </div>
@@ -380,7 +382,7 @@
                     </div>
                     <div class="popup-body">
                         <div class="popup-left">
-                            <img src="assets/giovannaAndrade.png" alt="Foto da Pessoa 4" class="modal-img">
+                            <img src="assets/giAndrade.jpg" alt="Foto da Pessoa 4" class="modal-img">
                             <p class="popup-desc">
                                 Estudante do Germinare Tech - Desenvolvedora do app Khiata -
                                 Pretende seguir ramo de Análise de Dados.
@@ -525,7 +527,7 @@
                         </div>
                         <div class="popup-body">
                             <div class="popup-left">
-                                <img src="assets/rapha.jpg  " alt="Foto da Pessoa 7" class="modal-img">
+                                <img src="assets/rapha.jpg" alt="Foto da Pessoa 7" class="modal-img">
                                 <p class="popup-desc">
                                     Estudante do Germinare Tech - Desenvolvedora do app Khiata -
                                     Pretende seguir ramo de Desenvolvedor de Sistemas.
@@ -638,7 +640,7 @@
                             <p><strong>Telefone:</strong> (11) 98010-0556</p>
                             <p><strong>E-mail:</strong> inaldo.freitas@germinare.org.br</p>
                             <p><strong>Função:</strong> Analista de dados</p>
-                            <p><strong>Descrição da Função:</strong> Cuidar de tudo relacionando ao banco de dados (RPA incluso)</p>
+                            <p><strong>Descrição da Função:</strong>Cuidar da parte da criação do banco de dados e automação de migração dos dados entre os bancos e API's relacionadas aos bancos NO SQL.</p>
                         </div>
                     </div>
                 </div>
