@@ -14,6 +14,13 @@
             <img src="../../assets/LogoKhiata.svg" alt="">
         </div>
 
+        <div class="voltar">
+            <a href="../paginas-principais/area-oculta.jsp" class="botao-voltar">
+                <img src="../../assets/voltar.png" alt="Voltar" />
+                <span>Voltar</span>
+            </a>
+        </div>
+
         <div class="formulario">
             <h1>Bem-vindo, administrador!</h1>
 

@@ -17,6 +17,8 @@
     Endereco enderecoComprador = (Endereco) request.getAttribute("endereco");
 
     String corpoEmail = "Olá senhor/a costureiro/a "+costureiro.getNome()+", nós da equipe administrativa do Khiata, viemos por meio deste e-mail enviar o endereço do/a comprador/a" +comprador.getNome()+ ". Agradecemos desde já! \nSegue o endereço solicitado: " +enderecoComprador;
+
+    String emailKhiata = "khiatatextil@gmail.com";
 %>
   <div class="transicao">
     <div id="container">
@@ -37,7 +39,7 @@
       <!-- oi -->
       <div class="button-container">
         <div class="button">
-          <button style="--clr:#39FF14"><span>Mandar email</span><i></i></button>
+          <a href="mailto:<%=costureiro.getEmail()%>?cc=<%=comprador.getEmail()%>&bcc=<%=emailKhiata%>&subject=Enviar endereço&body=<%=corpoEmail%>"><button style="--clr:#39FF14"><span>Mandar email</span><i></i></button></a>
         </div>
       </div>
       <div class="container-arrow">
