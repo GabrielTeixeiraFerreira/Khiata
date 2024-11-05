@@ -1,4 +1,9 @@
 <%@ page errorPage="404.jsp" contentType="text/html;charset=UTF-8" language="java" %>
+<% Object logado = request.getSession().getAttribute("logado");
+    if (logado == null) {
+        response.sendRedirect(request.getContextPath() + "/pages/paginas-principais/login.jsp");
+    }
+%>
 <jsp:include page="../paginas-principais/area-oculta.jsp"></jsp:include>
 <html>
 <head>

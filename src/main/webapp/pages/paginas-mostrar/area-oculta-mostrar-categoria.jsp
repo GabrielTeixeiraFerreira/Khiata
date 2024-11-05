@@ -1,4 +1,9 @@
 <%@ page import="com.khita_servlet.model.Categoria" errorPage="../paginas-mensagem/404.jsp"%>
+<% Object logado = request.getSession().getAttribute("logado");
+  if (logado == null) {
+    response.sendRedirect(request.getContextPath() + "/pages/paginas-principais/login.jsp");
+  }
+%>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>

@@ -26,7 +26,8 @@ public class LoginAdm extends HttpServlet{
 
 //        Verificando se é possível entrar no banco com esse conjunto de informações
             if (administradorDAO.login(email,senha)) {
-                // Jogar para página oculta para ADMs
+                // Jogar para página oculta para ADMs e definir que o usuário está logado na página
+                req.getSession().setAttribute("logado", "logado");
                 req.getRequestDispatcher("/pages/paginas-principais/area-oculta.jsp").forward(req,resp);
             }else{
                 // Colocar uma mensagem de erro dizendo que o login está errado

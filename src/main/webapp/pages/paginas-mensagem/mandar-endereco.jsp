@@ -1,6 +1,11 @@
 <%@ page import="com.khita_servlet.model.Usuario" %>
 <%@ page import="com.khita_servlet.model.Endereco" %>
 <%@ page errorPage="404.jsp" contentType="text/html;charset=UTF-8" language="java" %>
+<% Object logado = request.getSession().getAttribute("logado");
+  if (logado == null) {
+    response.sendRedirect(request.getContextPath() + "/pages/paginas-principais/login.jsp");
+  }
+%>
 <!DOCTYPE html>
 <html lang="en">
 

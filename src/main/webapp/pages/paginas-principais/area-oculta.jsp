@@ -1,4 +1,9 @@
 <%@ page errorPage="../paginas-mensagem/404.jsp" contentType="text/html;charset=UTF-8" language="java" %>
+<% Object logado = request.getSession().getAttribute("logado");
+    if (logado == null) {
+        response.sendRedirect(request.getContextPath() + "/pages/paginas-principais/login.jsp");
+    }
+%>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

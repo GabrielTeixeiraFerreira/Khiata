@@ -6,6 +6,13 @@
   font-family: "Poppins";
 }
 
+/* Definindo as cores */
+:root {
+    --brancoHover: #ebebeb;
+    --azul: #384384;
+    --amareloPrincipal: #fac552;
+  }
+
 body{
 
     display: flex;
@@ -99,7 +106,7 @@ body{
     right: 20px;
 }
 
-.botao-voltar {
+.botao-voltar{
     display: flex;
     align-items: center;
     padding: 10px 20px;

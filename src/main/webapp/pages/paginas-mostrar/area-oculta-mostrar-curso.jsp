@@ -1,5 +1,10 @@
 <%@ page import="com.khita_servlet.model.Curso" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" errorPage="../paginas-mensagem/404.jsp"%>
+<% Object logado = request.getSession().getAttribute("logado");
+  if (logado == null) {
+    response.sendRedirect(request.getContextPath() + "/pages/paginas-principais/login.jsp");
+  }
+%>
 <html>
   <head>
     <title>Cursos</title>
