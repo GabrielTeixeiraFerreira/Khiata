@@ -103,7 +103,7 @@
         <li class="content-item"><a href="#mensagem" onclick="showTab('tab80')">Analytics</a></li>
         <br>
         <br>
-        <div class="imgs"><img id="bem-vindo" src="../../assets/engenheiro.png" alt="BoasVindas"></div>
+        <div class="imgs"><img id="bem-vindo" class="img-tab" src="../../assets/engenheiro.png" alt="BoasVindas" ></div>
     </div>
     <!-- -------------------------------------------------------------- -->
 
@@ -124,7 +124,7 @@
         <li class="content-item"><a href="#mensagem" onclick="showTab('tab13')">Remover categoria</a></li>
         <br>
         <br>
-        <div class="imgs"><img id="categoria" src="../../assets/gestao-de-pastas.png" alt="Categorias"></div>
+        <div class="imgs"><img id="categoria" class="img-tab" src="../../assets/gestao-de-pastas.png" alt="Categorias"></div>
 
     </div>
 
@@ -200,7 +200,7 @@
         <li class="content-item"><a href="#mensagem" onclick="showTab('tab21')">Mostrar usuários</a></li>
         <br><br>
 
-        <div class="imgs"><img id="user" src="../../assets/silhueta-de-multiplos-usuarios.png" alt="Usuários"></div>
+        <div class="imgs"><img id="user" class="img-tab" src="../../assets/silhueta-de-multiplos-usuarios.png" alt="Usuários"></div>
     </div>
     
     <div id="tab21" class="tab-content">
@@ -226,7 +226,7 @@
         <br>
         <li class="content-item"><a href="#mensagem" onclick="showTab('tab31')">Disponibilizar endereço</a></li>
         <br><br>
-        <div class="imgs"><img id="endereco" src="../../assets/mapa.png" alt="Endereços"></div>
+        <div class="imgs"><img id="endereco" class="img-tab" src="../../assets/mapa.png" alt="Endereços"></div>
     </div>
 
 
@@ -268,7 +268,7 @@
         <li class="content-item"><a href="#mensagem" onclick="showTab('tab42')">Registrar administrador(a)</a></li>
         <li class="content-item"><a href="#mensagem" onclick="showTab('tab43')">Remover administrador(a)</a></li>
         <br><br>
-        <div class="imgs"><img id="admin" src="../../assets/definicoes.png" alt="Administradores"></div>
+        <div class="imgs"><img id="admin" class="img-tab" src="../../assets/definicoes.png" alt="Administradores"></div>
 
     </div>
 
@@ -347,7 +347,7 @@
         <li class="content-item"><a href="#mensagem" onclick="showTab('tab51')">Alocar preferência em usuário</a></li>
         <li class="content-item"><a href="#mensagem" onclick="showTab('tab52')">Desalocar preferência em usuário</a></li>
         <br><br>
-        <div class="imgs"><img id="pref" src="../../assets/preferencias.png" alt="Preferências"></div>
+        <div class="imgs"><img id="pref" class="img-tab" src="../../assets/preferencias.png" alt="Preferências"></div>
 
     </div>
 
@@ -418,7 +418,7 @@
         <li class="content-item"><a href="#mensagem" onclick="showTab('tab63')">Remover curso</a></li>
         <br><br>
 
-        <div class="imgs"><img id="curso" src="../../assets/educacao.png" alt="Cursos"></div>
+        <div class="imgs"><img id="curso" class="img-tab" src="../../assets/educacao.png" alt="Cursos"></div>
 
     </div>
 
@@ -495,7 +495,7 @@
         <br><br>
 
         <div class="imgs">
-            <img id="tipo-curso" src="../../assets/computador-portatil.png" alt="TipoCusos">
+            <img id="tipo-curso" class="img-tab" src="../../assets/computador-portatil.png" alt="TipoCusos">
         </div>
 
     </div>
@@ -563,7 +563,7 @@
             <li class="content-item"><a href="#" target="-blank">Analisar</a></li>
             <br><br>
 
-            <div class="imgs"><img id="analytics" src="../../assets/analytics.png" alt="Analytics"></div>
+            <div class="imgs"><img id="analytics" class="img-tab" src="../../assets/analytics.png" alt="Analytics"></div>
         </div>
     <!-- ------------------------------------------------------------- -->
 

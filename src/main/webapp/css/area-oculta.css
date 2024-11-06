@@ -251,35 +251,9 @@ header ul {
   filter: drop-shadow(3px 3px 3px black);
 }
 
-#endereco {
+.img-tab{
   position: relative;
-  left: 120%;
-}
-
-#tipo-curso {
-  position: relative;
-  left: 100%;
-}
-
-#categoria,
-#pref,
-#analytics {
-  position: relative;
-  left: 125%;
-}
-#curso {
-  position: relative;
-  left: 150%;
-}
-
-#admin {
-  position: relative;
-  left: 80%;
-}
-
-#bem-vindo{
-  position: relative;
-  left: 80%;
+  left: 70%;
 }
 
 @media screen and (max-width: 1550px) {
@@ -302,16 +276,10 @@ header ul {
     left: 65%;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1070px) {
   /* Posicionando os elementos */
-  #categoria,
-  #tipo-curso,
-  #curso,
-  #pref,
-  #analytics,
-  #endereco,
-  #endereco,
-  #user {
+  .img-tab {
+    left: 60%;
     transform: translateX(0);
   }
 }
@@ -326,15 +294,7 @@ header ul {
     padding: 10px;
   }
 
-  #categoria,
-  #tipo-curso,
-  #curso,
-  #pref,
-  #analytics,
-  #endereco,
-  #endereco,
-  #user,
-  #admin {
+  .img-tab{
     left: 0;
     transform: translateX(0);
   }
