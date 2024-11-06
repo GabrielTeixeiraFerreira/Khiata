@@ -23,7 +23,7 @@ html {
   background: linear-gradient(
     to right,
     var(--cor-secundaria),
-    /* Gradiente de fundo da cor secundária para a primária ao passar o mouse */
+    /* Gradiente de fundo da cor secundária para a cor primária */
       var(--cor-primaria-hover)
   );
   user-select: none;
@@ -35,15 +35,14 @@ header {
   background-color: var(--cor-primaria); /* Cor de fundo do cabeçalho */
   color: white; /* Cor do texto no cabeçalho */
   box-shadow: 0px 0px 8px 0px black; /* Sombra ao redor do cabeçalho */
-  position: -webkit-sticky; /* Fixa o cabeçalho ao rolar para baixo */
   position: sticky; /* Fixa o cabeçalho ao rolar para baixo */
   top: 0; /* Fixa o cabeçalho no topo */
   z-index: 100; /* Define a prioridade de sobreposição */
 }
 
 header ul {
-  display: flex; /* Exibe os itens em linha */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
+  display: flex;
+  align-items: center;
 }
 
 /* Menu de navegação */
@@ -56,7 +55,7 @@ header ul {
 
 /* Logo da empresa */
 .title {
-  width: 30%; /* Largura do título */
+  width: 30%;
   height: auto; /* Altura automática */
 }
 
@@ -144,12 +143,12 @@ header ul {
     position: fixed; /* Fixa a lista de links */
     display: none; /* Inicialmente escondido */
     position: absolute; /* Posiciona a lista de links */
-    top: 99%; /* Posiciona a lista logo abaixo do cabeçalho */
+    top: 99%;
     right: 0; /* Alinha à direita */
-    background-color: var(--cor-primaria); /* Cor de fundo da lista de links */
+    background-color: var(--cor-primaria);
     flex-direction: column-reverse; /* Exibe os links em coluna, do fundo para o topo */
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3); /* Sombra para a lista de links */
-    padding: 2%; /* Preenchimento interno */
+    padding: 2%;
     z-index: 999; /* Prioridade de sobreposição */
   }
 
@@ -159,7 +158,7 @@ header ul {
 
   .nav-titulo {
     flex-grow: 1; /* Permite que o título cresça */
-    text-align: center; /* Alinha o texto ao centro */
+    text-align: center;
     margin: 0; /* Remove margens */
     padding: 0; /* Remove preenchimento */
   }
@@ -204,7 +203,7 @@ header ul {
 .item-conteudo a {
   width: 100%; /* Largura dos links */
   text-decoration: none; /* Remove sublinhado dos links */
-  color: var(--cor-secundaria); 
+  color: var(--cor-secundaria);
   background-color: #f6c44e;
   padding: 13px; /* Preenchimento interno dos links */
   border-radius: 8px;
@@ -249,7 +248,7 @@ header ul {
   filter: drop-shadow(3px 3px 3px black);
 }
 
-.img-tab{
+.img-tab {
   position: relative;
   left: 70%;
 }
@@ -272,24 +271,24 @@ header ul {
     padding: 10px;
   }
 
-  .img-tab{
+  .img-tab {
     left: 0;
     transform: translateX(0);
   }
-  
 }
 
 /* -------------------------------------------- */
 
 /* Estilizando botões e formulários */
 button {
-  background: var(--cor-primaria); /* Cor de fundo do botão */
+  background: var(--cor-primaria);
   border-color: #faaf54; /* Cor da borda do botão */
   border-radius: 10px; /* Cantos arredondados */
-  width: 160px; /* Largura do botão */
-  padding: 5px; /* Preenchimento interno */
+  width: 160px;
+  padding: 5px;
   margin: 15px 0 10px 0; /* Margens superior e inferior */
   white-space: nowrap; /* Garante que o texto fique em uma linha só */
+  cursor: pointer;
 }
 
 button:hover {
@@ -311,12 +310,11 @@ input {
 }
 /* ------------------------------------- */
 
-
 /* Responsividade para os botões da tela de boas vindas */
 @media screen and (max-width: 1130px) {
-  #tab0 .item-conteudo{
+  #tab0 .item-conteudo {
     display: block; /* Exibe os itens de conteúdo em bloco */
-    margin-bottom: 35px; /* Margem inferior */
+    margin-bottom: 35px;
   }
 }
 /* ------------------------------------- */
