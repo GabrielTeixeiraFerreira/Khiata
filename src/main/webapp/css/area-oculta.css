@@ -277,6 +277,11 @@ header ul {
   left: 80%;
 }
 
+#bem-vindo{
+  position: relative;
+  left: 80%;
+}
+
 @media screen and (max-width: 1550px) {
   /* Posicionando os elementos */
   #categoria,

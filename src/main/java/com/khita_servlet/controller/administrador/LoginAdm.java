@@ -3,6 +3,7 @@ package com.khita_servlet.controller.administrador;
 
 import java.io.*;
 
+import com.khita_servlet.model.Administrador;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -26,8 +27,16 @@ public class LoginAdm extends HttpServlet{
 
 //        Verificando se é possível entrar no banco com esse conjunto de informações
             if (administradorDAO.login(email,senha)) {
-                // Jogar para página oculta para ADMs e definir que o usuário está logado na página
+
+                // Pegando o adm do banco com os dados fornecidos
+                Administrador administrador = administradorDAO.buscarAdmPeloEmailESenha(email,senha);
+
+                // Definindo atributos para a sessão assim dando permissão de acesso
+                // Além do nome do adm ser mostrado na primeira página
                 req.getSession().setAttribute("logado", "logado");
+                req.getSession().setAttribute("nome", administrador.getNome_completo());
+
+                // Jogar para página oculta para ADMs e definir que o usuário está logado na página
                 req.getRequestDispatcher("/pages/paginas-principais/area-oculta.jsp").forward(req,resp);
             }else{
                 // Colocar uma mensagem de erro dizendo que o login está errado

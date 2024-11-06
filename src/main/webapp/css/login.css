@@ -154,7 +154,7 @@ body {
   }
 
   .formulario input {
-    width: 100%;
+    width: 95%;
   }
 
   h1 {
@@ -162,7 +162,7 @@ body {
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 330px) {
   .formulario h1 {
     font-size: 2rem;
   }
