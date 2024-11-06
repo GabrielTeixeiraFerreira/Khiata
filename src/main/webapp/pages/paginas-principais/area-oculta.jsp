@@ -88,7 +88,7 @@
     <!-- -------------------------------------------------------------- -->
     <div id="tab0" class="tab-content info">
         <br>
-        <h1>Bem vindo/a, <%=nome%>.</h1>
+        <h1>Bem vindo(a), <%=nome%>.</h1>
         <p>Esta é a área oculta!</p>
         <p>Local onde você poderá interagir diretamente com algumas tabelas importantes para o Khiata.</p>
 

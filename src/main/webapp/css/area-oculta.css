@@ -256,26 +256,6 @@ header ul {
   left: 70%;
 }
 
-@media screen and (max-width: 1550px) {
-  /* Posicionando os elementos */
-  #categoria,
-  #tipo-curso,
-  #curso,
-  #pref,
-  #analytics,
-  #endereco,
-  #endereco {
-    left: 50%;
-    transform: translateX(100%);
-  }
-  #user {
-    position: relative;
-    left: 70%;
-  }
-  #admin {
-    left: 65%;
-  }
-}
 @media screen and (max-width: 1070px) {
   /* Posicionando os elementos */
   .img-tab {
@@ -298,6 +278,7 @@ header ul {
     left: 0;
     transform: translateX(0);
   }
+  
 }
 
 /* -------------------------------------------- */
@@ -330,5 +311,14 @@ input {
     margin-bottom: 35px; /* Margem inferior */
   }
 }
+/* ------------------------------------- */
 
+
+/* Responsividade para os botões da tela de boas vindas */
+@media screen and (max-width: 1130px) {
+  #tab0 .content-item{
+    display: block; /* Exibe os itens de conteúdo em bloco */
+    margin-bottom: 35px; /* Margem inferior */
+  }
+}
 /* ------------------------------------- */

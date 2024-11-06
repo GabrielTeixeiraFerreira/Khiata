@@ -33,7 +33,7 @@
                 <br><br>
                 <label for="senha">Senha</label>
                 <br>
-                <input type="senha" name="senha" id="senha" placeholder="Digite sua senha aqui">
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha aqui">
 
                 <br><br><br>
                 <button type="submit">Entrar</button>

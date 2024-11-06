@@ -369,7 +369,7 @@ body {
   margin-top: 15px;
   font-weight: 500;
   line-height: 1.8; /* Espaçamento da linha */
-  text-align: justify; /* Texto alinhado */
+  text-align: center; /* Texto alinhado */
   font-size: 20px;
 }
 
