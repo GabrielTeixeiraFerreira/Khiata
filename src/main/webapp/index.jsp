@@ -52,7 +52,7 @@
 <div class="sobre" id="sobre">
     <h1>Sobre Nós</h1>
 </div>
-<div class="containerSobre">
+<div class="container-sobre">
     <!-- Caixa com informações sobre quem somos -->
     <div class="caixa">
         <div class="icone">
@@ -152,16 +152,16 @@
 <hr>
 <!-- Seção de Projetos / Nossa Empresa -->
 <div class="projetos" id="empresa">
-    <div class="bolaKhiata">
-        <div class="title__about">
+    <div class="bola-khiata">
+        <div class="titulo-sobre">
             <h2></h2>
         </div>
-        <div class="contentTMJ">
-            <div class="left">
-                <div class="title__about">
+        <div class="conteudo-tmj">
+            <div class="esquerda">
+                <div class="titulo-sobre">
                     <h2>TMJ</h2>
                 </div>
-                <p id="sobreKhiata">
+                <p id="sobre-khiata">
                     <strong>Transformando o mundo juntos.</strong><br>
                     Somos uma empresa comprometida com o desenvolvimento sustentável.
                     A TMJ está sempre buscando novas soluções para os desafios ambientais.
@@ -169,7 +169,7 @@
                 </p>
             </div>
 
-            <div class="right">
+            <div class="direita">
                 <img src="assets/TMJlogo.png" alt="">
             </div>
         </div>
@@ -184,14 +184,14 @@
         <p>Aqui será possível experimentar uma prévia do nosso app. Para conseguir acesso a versão completa, instale agora mesmo!</p>
     </div>
 
-    <div class="phone-screen phone-interactive">
+    <div class="tela-telefone interacao-telefone">
         <iframe width="250px" height="610px"
                 src="https://embed.figma.com/proto/tv9Q5z0XLS5Z1Wj0OPOx7K/Prot%C3%B3tipo-Teste?node-id=21-544&node-type=canvas&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=21%3A536&hotspot-hints=0&embed-host=share&hide-ui=1"
                 allowfullscreen></iframe>
     </div>
 </div>
 <br><br><br>
-<hr class="esconderLinha">
+<hr class="esconder-linha">
 <br>
 
 
@@ -200,42 +200,42 @@
 <!-- ------------------------------------------------------------------------------------------------- -->
 <!-- CARDS -->
 <!-- COMEÇANDO CARDS -->
-<div class="bodycard" id="contatos">
-    <div class="all_cards">
-        <div class="title1card">1º Ano Tech</div>
+<div class="corpo-card" id="contatos">
+    <div class="todos-cards">
+        <div class="titulo1-card">1º Ano Tech</div>
         <!-- card 1 -->
-        <div class="container_card1"> <!-- mudar -->
-            <div class="card card_1">
-                <div class="contentcard ">
+        <div class="container-card1">
+            <div class="card card-1">
+                <div class="conteudo-card ">
                     <div class="imagem">
                         <img src="assets/caio.jpg" alt="Pessoa">
                     </div>
                 </div>
             </div>
             <div class="card card1_2">
-                <div class="mais1"></div><!-- mudar -->
-                <div class="contentcard ">
+                <div class="mais1"></div>
+                <div class="conteudo-card ">
                     <h3>Caio de Oliveira</h3>
                     <h4>Desenvolvedor WEB - Front-end</h4>
                 </div>
             </div>
 
             <div class="popup" id="popup1">
-                <div class="popup-content">
-                    <span class="close-btn" id="closePopup1">&times;</span>
-                    <div class="popup-header">
+                <div class="conteudo-popup">
+                    <span class="botao-fechar" id="fechar-popup1">&times;</span>
+                    <div class="cabeca-popup">
                     </div>
-                    <div class="popup-body">
-                        <div class="popup-left">
+                    <div class="corpo-popup">
+                        <div class="esquerda-popup">
                             <img src="assets/caio.jpg" alt="Foto da Pessoa 1" class="modal-img">
-                            <p class="popup-desc">
+                            <p class="descricao-popup">
                                 Estudante do Germinare Tech - Desenvolvedor do app Khiata - Pretende seguir ramo de
                                 Análise
                                 de Dados.Atua na área de desenvolvimento do site, também na parte de lógica de
                                 programação.
                                 </p>
                         </div>
-                        <div class="popup-right">
+                        <div class="direita-popup">
                             <p><strong>Idade:</strong> 16</p>
                             <p><strong>Gênero:</strong> Masculino</p>
                             <p><strong>Telefone:</strong> (11) 98485-8093</p>
@@ -253,13 +253,11 @@
         <!-- fazendo outros cards precisa: fazer o grid dessa bomba com 4x3 -->
         <!-- div do all cards e conteiner -->
 
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <!-- precisa modificar de card em card o conteiner card.card_2 popup closepopup -->
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
         <!-- card 2 -->
-        <div class="container_card2"> <!-- mudar -->
-            <div class="card card_1">
-                <div class="contentcard ">
+        <div class="container-card2">
+            <div class="card card-1">
+                <div class="conteudo-card ">
                     <div class="imagem">
                         <img src="assets/inacio.jpg" alt="Pessoa">
                     </div>
@@ -267,27 +265,27 @@
             </div>
             <div class="card card2_2">
                 <div class="mais2"></div>
-                <div class="contentcard ">
+                <div class="conteudo-card ">
                     <h3>Filipi Inácio</h3>
                     <h4>Desenvolvedor WEB - Front-end</h4>
                 </div>
             </div>
             <div class="popup" id="popup2">
-                <div class="popup-content">
-                    <span class="close-btn" id="closePopup2">&times;</span>
-                    <div class="popup-header">
+                <div class="conteudo-popup">
+                    <span class="botao-fechar" id="fechar-popup2">&times;</span>
+                    <div class="cabeca-popup">
                     </div>
-                    <div class="popup-body">
-                        <div class="popup-left">
+                    <div class="corpo-popup">
+                        <div class="esquerda-popup">
                             <img src="assets/inacio.jpg" alt="Foto da Pessoa 2" class="modal-img">
-                            <p class="popup-desc">
+                            <p class="descricao-popup">
                                 Estudante do Germinare Tech - Desenvolvedor do app Khiata -
                                 Pretende seguir ramo de Desenvolvedor de Sistemas.
                                 Atua na área de desenvolvimento do site e também na área de
                                 programação orientada à objetos.
                             </p>
                         </div>
-                        <div class="popup-right">
+                        <div class="direita-popup">
                             <p><strong>Idade:</strong> 16</p>
                             <p><strong>Gênero:</strong> Masculino</p>
                             <p><strong>Telefone:</strong> (11) 97597-7141</p>
@@ -302,13 +300,12 @@
                 </div>
             </div>
         </div>
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <!-- precisa modificar de card em card o conteiner card.card_2 popup closepopup -->
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
+
         <!-- card 3 -->
-        <div class="container_card3"> <!-- mudar -->
-            <div class="card card_1">
-                <div class="contentcard ">
+        <div class="container-card3">
+            <div class="card card-1">
+                <div class="conteudo-card ">
                     <div class="imagem">
                         <img src="assets/tetxsFoto.jpeg" alt="Pessoa">
                     </div>
@@ -316,20 +313,20 @@
             </div>
             <div class="card card3_2">
                 <div class="mais3"></div>
-                <div class="contentcard ">
+                <div class="conteudo-card ">
                     <h3>Gabriel Teixeira</h3>
                     <h4>Developer - Back-end</h4>
                 </div>
             </div>
             <div class="popup" id="popup3">
-                <div class="popup-content">
-                    <span class="close-btn" id="closePopup3">&times;</span>
-                    <div class="popup-header">
+                <div class="conteudo-popup">
+                    <span class="botao-fechar" id="fechar-popup3">&times;</span>
+                    <div class="cabeca-popup">
                     </div>
-                    <div class="popup-body">
-                        <div class="popup-left">
+                    <div class="corpo-popup">
+                        <div class="esquerda-popup">
                             <img src="assets/tetxsFoto.jpeg" alt="Foto da Pessoa 3" class="modal-img">
-                            <p class="popup-desc">
+                            <p class="descricao-popup">
                                 Estudante do Germinare Tech - Desenvolvedor do app Khiata -
                                 Pretende seguir ramo de Análise de Dados.
                                 Atua na área de banco de dados do app e site, na área de
@@ -337,7 +334,7 @@
                                 site.
                             </p>
                         </div>
-                        <div class="popup-right">
+                        <div class="direita-popup">
                             <p><strong>Idade:</strong> 15</p>
                             <p><strong>Gênero:</strong> Masculino</p>
                             <p><strong>Telefone:</strong> (11) 97272-1701</p>
@@ -355,13 +352,11 @@
             </div>
         </div>
 
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <!-- precisa modificar de card em card o conteiner card.card_2 popup closepopup -->
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
         <!-- card 4 -->
-        <div class="container_card4"> <!-- mudar -->
-            <div class="card card_1">
-                <div class="contentcard ">
+        <div class="container-card4">
+            <div class="card card-1">
+                <div class="conteudo-card ">
                     <div class="imagem">
                         <img src="assets/giAndrade.jpeg" alt="Pessoa">
                     </div>
@@ -369,20 +364,20 @@
             </div>
             <div class="card card4_2">
                 <div class="mais4"></div>
-                <div class="contentcard ">
+                <div class="conteudo-card ">
                     <h3>Giovanna Vicentim</h3>
                     <h4>Developer - Back-end</h4>
                 </div>
             </div>
             <div class="popup" id="popup4">
-                <div class="popup-content">
-                    <span class="close-btn" id="closePopup4">&times;</span>
-                    <div class="popup-header">
+                <div class="conteudo-popup">
+                    <span class="botao-fechar" id="fechar-popup4">&times;</span>
+                    <div class="cabeca-popup">
                     </div>
-                    <div class="popup-body">
-                        <div class="popup-left">
+                    <div class="corpo-popup">
+                        <div class="esquerda-popup">
                             <img src="assets/giAndrade.jpeg" alt="Foto da Pessoa 4" class="modal-img">
-                            <p class="popup-desc">
+                            <p class="descricao-popup">
                                 Estudante do Germinare Tech - Desenvolvedora do app Khiata -
                                 Pretende seguir ramo de Análise de Dados.
                                 Atua na área de banco de dados do app e site, na área de
@@ -390,7 +385,7 @@
                                 site.
                             </p>
                         </div>
-                        <div class="popup-right">
+                        <div class="direita-popup">
                             <p><strong>Idade:</strong> 16</p>
                             <p><strong>Gênero:</strong> Feminino</p>
                             <p><strong>Telefone:</strong> (11) 94951-2199</p>
@@ -404,14 +399,12 @@
             </div>
         </div>
 
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <!-- precisa modificar de card em card o conteiner card.card_2 popup closepopup -->
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        
         <!-- card 5 -->
         <div class="sub_cards">
-            <div class="container_card5">
-                <div class="card card_1">
-                    <div class="contentcard ">
+            <div class="container-card5">
+                <div class="card card-1">
+                    <div class="conteudo-card ">
                         <div class="imagem">
                             <img src="assets/LauraTavora.jpg" alt="Pessoa">
                         </div>
@@ -419,26 +412,26 @@
                 </div>
                 <div class="card card5_2">
                     <div class="mais5"></div>
-                    <div class="contentcard ">
+                    <div class="conteudo-card ">
                         <h3>Laura Tavora</h3>
                         <h4>Desenvolvedor WEB - Front-end</h4>
                     </div>
                 </div>
                 <div class="popup" id="popup5">
-                    <div class="popup-content">
-                        <span class="close-btn" id="closePopup5">&times;</span>
-                        <div class="popup-header">
+                    <div class="conteudo-popup">
+                        <span class="botao-fechar" id="fechar-popup5">&times;</span>
+                        <div class="cabeca-popup">
                         </div>
-                        <div class="popup-body">
-                            <div class="popup-left">
+                        <div class="corpo-popup">
+                            <div class="esquerda-popup">
                                 <img src="assets/LauraTavora.jpg" alt="Foto da Pessoa 5" class="modal-img">
-                                <p class="popup-desc">
+                                <p class="descricao-popup">
                                     Estudante do Germinare Tech - Desenvolvedora do app Khiata -
                                     Pretende seguir ramo de Desenvolvedor de Sistemas.
                                     Atua na área de desenvolvimento do site.
                                 </p>
                             </div>
-                            <div class="popup-right">
+                            <div class="direita-popup">
                                 <p><strong>Idade:</strong> 16</p>
                                 <p><strong>Gênero:</strong> Feminino</p>
                                 <p><strong>Telefone:</strong> (11) 97776-0294</p>
@@ -451,13 +444,12 @@
                     </div>
                 </div>
             </div>
-            <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-            <!-- precisa modificar de card em card o conteiner card.card_2 popup closepopup -->
-            <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
+            
+
             <!-- card 6 -->
-            <div class="container_card6">
-                <div class="card card_1">
-                    <div class="contentcard ">
+            <div class="container-card6">
+                <div class="card card-1">
+                    <div class="conteudo-card ">
                         <div class="imagem">
                             <img src="assets/rafael.jpg" alt="Pessoa">
                         </div>
@@ -465,27 +457,27 @@
                 </div>
                 <div class="card card6_2">
                     <div class="mais6"></div>
-                    <div class="contentcard ">
+                    <div class="conteudo-card ">
                         <h3>Rafael Cruz</h3>
                         <h4>Gestor de projetos</h4>
 
                     </div>
                 </div>
                 <div class="popup" id="popup6">
-                    <div class="popup-content">
-                        <span class="close-btn" id="closePopup6">&times;</span>
-                        <div class="popup-header">
+                    <div class="conteudo-popup">
+                        <span class="botao-fechar" id="fechar-popup6">&times;</span>
+                        <div class="cabeca-popup">
                         </div>
-                        <div class="popup-body">
-                            <div class="popup-left">
+                        <div class="corpo-popup">
+                            <div class="esquerda-popup">
                                 <img src="assets/rafael.jpg" alt="Foto da Pessoa 6" class="modal-img">
-                                <p class="popup-desc">
+                                <p class="descricao-popup">
                                     Estudante do Germinare Tech - Desenvolvedor do app Khiata -
                                     Pretende seguir ramo de Desenvolvedor de Sistemas.
                                     Atua na área de gerenciamento do projeto, utilizando planilhas do EXCEL.
                                 </p>
                             </div>
-                            <div class="popup-right">
+                            <div class="direita-popup">
                                 <p><strong>Idade:</strong> 15</p>
                                 <p><strong>Gênero:</strong> Masculino</p>
                                 <p><strong>Telefone:</strong> (11) 95552-9102</p>
@@ -499,13 +491,12 @@
                     </div>
                 </div>
             </div>
-            <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-            <!-- precisa modificar de card em card o conteiner card.card_2 popup closepopup -->
-            <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
+            
+
             <!-- card 7 -->
-            <div class="container_card7">
-                <div class="card card_1">
-                    <div class="contentcard ">
+            <div class="container-card7">
+                <div class="card card-1">
+                    <div class="conteudo-card ">
                         <div class="imagem">
                             <img src="assets/rapha.jpg" alt="Pessoa">
                         </div>
@@ -513,27 +504,27 @@
                 </div>
                 <div class="card card7_2">
                     <div class="mais7"></div>
-                    <div class="contentcard ">
+                    <div class="conteudo-card ">
                         <h3>Raphaela Maria de Souza Gomes</h3>
                         <h4>Desenvolvedor WEB</h4>
 
                     </div>
                 </div>
                 <div class="popup" id="popup7">
-                    <div class="popup-content">
-                        <span class="close-btn" id="closePopup7">&times;</span>
-                        <div class="popup-header">
+                    <div class="conteudo-popup">
+                        <span class="botao-fechar" id="fechar-popup7">&times;</span>
+                        <div class="cabeca-popup">
                         </div>
-                        <div class="popup-body">
-                            <div class="popup-left">
+                        <div class="corpo-popup">
+                            <div class="esquerda-popup">
                                 <img src="assets/rapha.jpg" alt="Foto da Pessoa 7" class="modal-img">
-                                <p class="popup-desc">
+                                <p class="descricao-popup">
                                     Estudante do Germinare Tech - Desenvolvedora do app Khiata -
                                     Pretende seguir ramo de Desenvolvedor de Sistemas.
                                     Atua na área de desenvolvimento do site.
                                 </p>
                             </div>
-                            <div class="popup-right">
+                            <div class="direita-popup">
                                 <p><strong>Idade:</strong> 16</p>
                                 <p><strong>Gênero:</strong> Feminino</p>
                                 <p><strong>Telefone:</strong> (11) 98754-3080</p>
@@ -549,19 +540,16 @@
             </div>
             <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
         </div>
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <div class="title2card">2º Ano Tech</div>
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <!-- precisa modificar de card em card o conteiner card.card_2 popup closepopup -->
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <!-- --------------------------------------------------------------------------------------------- -->
+    
+        <div class="titulo2-card">2º Ano Tech</div>
+        <!-- --------------------------------------------------------------------------------------------- -->
+
+        
         <!-- card 8 -->
-        <div class="container_card8">
-            <div class="card card_1">
-                <div class="contentcard ">
+        <div class="container-card8">
+            <div class="card card-1">
+                <div class="conteudo-card ">
                     <div class="imagem">
                         <img src="assets/VetorettiFoto.jpeg" alt="Pessoa">
                     </div>
@@ -569,25 +557,25 @@
             </div>
             <div class="card card8_2">
                 <div class="mais8"></div>
-                <div class="contentcard ">
+                <div class="conteudo-card ">
                     <h3>Enzo Vetoretti</h3>
                     <h4>Analista de dados</h4>
 
                 </div>
             </div>
             <div class="popup" id="popup8">
-                <div class="popup-content">
-                    <span class="close-btn" id="closePopup8">&times;</span>
-                    <div class="popup-header">
+                <div class="conteudo-popup">
+                    <span class="botao-fechar" id="fechar-popup8">&times;</span>
+                    <div class="cabeca-popup">
                     </div>
-                    <div class="popup-body">
-                        <div class="popup-left">
+                    <div class="corpo-popup">
+                        <div class="esquerda-popup">
                             <img src="assets/VetorettiFoto.jpeg" alt="Foto da Pessoa 8" class="modal-img">
-                            <p class="popup-desc">
+                            <p class="descricao-popup">
                                 Está cursando Análise de Dados no Instituto JeF e cooperando na construção do aplicativo, utilizando IAs, Dashboards, etc.
                             </p>
                         </div>
-                        <div class="popup-right">
+                        <div class="direita-popup">
                             <p><strong>Idade:</strong> 17</p>
                             <p><strong>Gênero:</strong> Masculino</p>
                             <p><strong>Telefone:</strong> (11) 97597-7141</p>
@@ -600,13 +588,11 @@
             </div>
         </div>
 
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <!-- precisa modificar de card em card o conteiner card.card_2 popup closepopup -->
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
         <!-- card 9 -->
-        <div class="container_card9">
-            <div class="card card_1">
-                <div class="contentcard ">
+        <div class="container-card9">
+            <div class="card card-1">
+                <div class="conteudo-card ">
                     <div class="imagem">
                         <img src="assets/Inaldo Pereira Freitas (1).JPG" alt="Pessoa">
                     </div>
@@ -614,26 +600,26 @@
             </div>
             <div class="card card9_2">
                 <div class="mais9"></div>
-                <div class="contentcard">
+                <div class="conteudo-card">
                     <h3>Inaldo Pereira</h3>
                     <h4>Analista de dados</h4>
 
                 </div>
             </div>
             <div class="popup" id="popup9">
-                <div class="popup-content">
-                    <span class="close-btn" id="closePopup9">&times;</span>
-                    <div class="popup-header">
+                <div class="conteudo-popup">
+                    <span class="botao-fechar" id="fechar-popup9">&times;</span>
+                    <div class="cabeca-popup">
                     </div>
-                    <div class="popup-body">
-                        <div class="popup-left">
+                    <div class="corpo-popup">
+                        <div class="esquerda-popup">
                             <img src="assets/Inaldo Pereira Freitas (1).JPG" alt="Foto da Pessoa 9"
                                  class="modal-img">
-                            <p class="popup-desc">
+                            <p class="descricao-popup">
                                 Está cursando Análise de Dados no Instituto JeF e cooperando na construção do aplicativo, com coisas relacionadas ao banco de dados, incluindo RPA.
                             </p>
                         </div>
-                        <div class="popup-right">
+                        <div class="direita-popup">
                             <p><strong>Idade:</strong> 17</p>
                             <p><strong>Gênero:</strong> Masculino</p>
                             <p><strong>Telefone:</strong> (11) 98010-0556</p>
@@ -646,13 +632,11 @@
             </div>
         </div>
 
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <!-- precisa modificar de card em card o conteiner card.card_2 popup closepopup -->
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
         <!-- card 10 -->
-        <div class="container_card10">
-            <div class="card card_1">
-                <div class="contentcard ">
+        <div class="container-card10">
+            <div class="card card-1">
+                <div class="conteudo-card ">
                     <div class="imagem">
                         <img src="assets/Nicolas.jpg" alt="Pessoa">
                     </div>
@@ -660,26 +644,26 @@
             </div>
             <div class="card card10_2">
                 <div class="mais10"></div>
-                <div class="contentcard ">
+                <div class="conteudo-card ">
                     <h3>Nícolas Nakashima</h3>
                     <h4>Desenvolvedor WEB</h4>
 
                 </div>
             </div>
             <div class="popup" id="popup10">
-                <div class="popup-content">
-                    <span class="close-btn" id="closePopup10">&times;</span>
-                    <div class="popup-header">
+                <div class="conteudo-popup">
+                    <span class="botao-fechar" id="fechar-popup10">&times;</span>
+                    <div class="cabeca-popup">
                     </div>
-                    <div class="popup-body">
-                        <div class="popup-left">
+                    <div class="corpo-popup">
+                        <div class="esquerda-popup">
                             <img src="assets/Nicolas.jpg" alt="Foto da Pessoa 10" class="modal-img">
-                            <p class="popup-desc">
+                            <p class="descricao-popup">
                                 Está cursando Desenvolvimento de Sistemas no Instituto JeF e cooperando na construção do aplicativo, com coisas relacionadas
                                 ao back-end do projeto.
                             </p>
                         </div>
-                        <div class="popup-right">
+                        <div class="direita-popup">
                             <p><strong>Idade:</strong> 17</p>
                             <p><strong>Gênero:</strong> Masculino</p>
                             <p><strong>Telefone:</strong> (11) 95693-8057</p>
@@ -692,13 +676,11 @@
             </div>
         </div>
 
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <!-- precisa modificar de card em card o conteiner card.card_2 popup closepopup -->
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
         <!-- card 11 -->
-        <div class="container_card11">
-            <div class="card card_1">
-                <div class="contentcard ">
+        <div class="container-card11">
+            <div class="card card-1">
+                <div class="conteudo-card ">
                     <div class="imagem">
                         <img src="assets/heitor.jpg" alt="Pessoa">
                     </div>
@@ -706,26 +688,26 @@
             </div>
             <div class="card card11_2">
                 <div class="mais11"></div>
-                <div class="contentcard ">
+                <div class="conteudo-card ">
                     <h3>Heitor Campos</h3>
                     <h4>Desenvolvedor WEB</h4>
 
                 </div>
             </div>
             <div class="popup" id="popup11">
-                <div class="popup-content">
-                    <span class="close-btn" id="closePopup11">&times;</span>
-                    <div class="popup-header">
+                <div class="conteudo-popup">
+                    <span class="botao-fechar" id="fechar-popup11">&times;</span>
+                    <div class="cabeca-popup">
                     </div>
-                    <div class="popup-body">
-                        <div class="popup-left">
+                    <div class="corpo-popup">
+                        <div class="esquerda-popup">
                             <img src="assets/heitor.jpg" alt="Foto da Pessoa 11" class="modal-img">
-                            <p class="popup-desc">
+                            <p class="descricao-popup">
                                 Está cursando Desenvolvimento de Sistemas no Instituto JeF e cooperando na construção do aplicativo, com coisas relacionadas
                                 a design, git, etc.
                             </p>
                         </div>
-                        <div class="popup-right">
+                        <div class="direita-popup">
                             <p><strong>Idade:</strong> 16</p>
                             <p><strong>Gênero:</strong> Masculino</p>
                             <p><strong>Telefone:</strong> (11) 99237-8347</p>
@@ -741,8 +723,11 @@
 </div>
 <br><br><br><br><br><br><br>
 
+
+<!-- Footer -->
+<!-- --------------------------------------------------------------------------------------------- -->
 <footer class="site-footer">
-    <div class="footer-container">
+    <div class="container-footer">
         <div class="footer">
             <img src="assets/khiata (2).png" alt="Logo do Site" class="footer-logo">
             <img src="assets/9bffe443-6526-45b1-bf0f-094869c2a828-removebg-preview.png" alt="KHIKHIZINHA" class="footer-khi">
@@ -760,7 +745,7 @@
             <a href="https://www.instagram.com/khiatatextil/" target="_blank">Instagram</a>
         </div>
     </div>
-    <div class="footer-bottom">
+    <div class="botao-footer">
         <p>&copy; 2024 Khiata, by TMJ.</p>
     </div>
 </footer>

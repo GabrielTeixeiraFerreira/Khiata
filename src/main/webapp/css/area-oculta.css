@@ -188,46 +188,44 @@ header ul {
 /* ------------------------------------- */
 
 /* Estilo para o conteúdo principal */
-.main-content {
-  color: #f6f6f6; /* Cor do texto do conteúdo */
-  display: flex; /* Exibe os itens em linha */
+.conteudo-principal {
+  color: #f6f6f6;
   margin-left: 4%; /* Margem à esquerda */
 }
 
 /* Estilo para os itens de conteúdo */
-.content-item {
+.item-conteudo {
   list-style: none; /* Remove marcadores da lista */
-  display: inline; /* Exibe os itens em linha */
+  display: inline-flex; /* Exibe os itens em linha */
   padding-right: 20px; /* Preenchimento à direita */
   text-decoration: none; /* Remove sublinhado dos links */
-  z-index: 999; /* Prioridade de sobreposição */
 }
 
-.content-item a {
-  width: 40%; /* Largura dos links */
+.item-conteudo a {
+  width: 100%; /* Largura dos links */
   text-decoration: none; /* Remove sublinhado dos links */
-  color: var(--cor-secundaria); /* Cor do texto dos links */
-  background-color: #f6c44e; /* Cor de fundo dos links */
+  color: var(--cor-secundaria); 
+  background-color: #f6c44e;
   padding: 13px; /* Preenchimento interno dos links */
-  border-radius: 8px; /* Cantos arredondados */
+  border-radius: 8px;
   transition: 0.5s; /* Transição suave para efeitos de hover */
   font-weight: bold; /* Texto em negrito */
   box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5); /* Sombra para os links */
-  z-index: 999; /* Prioridade de sobreposição */
+  margin-bottom: 25px;
 }
 
-.content-item a:hover {
+.item-conteudo a:hover {
   background-color: var(
     --cor-primaria-hover
   ); /* Cor de fundo ao passar o mouse sobre os links */
   color: #f6f6f6; /* Cor do texto ao passar o mouse */
 }
 
-.tab-content {
+.conteudo-tab {
   display: none; /* Oculta o conteúdo das abas */
 }
 
-.tab-content.active {
+.conteudo-tab.active {
   display: block; /* Exibe o conteúdo da aba ativa */
   width: 100%; /* Largura total */
 }
@@ -306,7 +304,7 @@ input {
 
 /* Responsividade para telas menores que 768px */
 @media screen and (max-width: 768px) {
-  .content-item {
+  .item-conteudo {
     display: block; /* Exibe os itens de conteúdo em bloco */
     margin-bottom: 35px; /* Margem inferior */
   }
@@ -316,7 +314,7 @@ input {
 
 /* Responsividade para os botões da tela de boas vindas */
 @media screen and (max-width: 1130px) {
-  #tab0 .content-item{
+  #tab0 .item-conteudo{
     display: block; /* Exibe os itens de conteúdo em bloco */
     margin-bottom: 35px; /* Margem inferior */
   }

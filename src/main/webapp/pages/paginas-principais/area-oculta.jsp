@@ -82,25 +82,25 @@
 
 <!-- Conteúdos -->
 <!-- --------------------------------------------------------- -->
-<div class="main-content">
+<div class="conteudo-principal">
 
     <!-- Boas vindas -->
     <!-- -------------------------------------------------------------- -->
-    <div id="tab0" class="tab-content info">
+    <div id="tab0" class="conteudo-tab info">
         <br>
         <h1>Bem vindo(a), <%=nome%>.</h1>
         <p>Esta é a área oculta!</p>
         <p>Local onde você poderá interagir diretamente com algumas tabelas importantes para o Khiata.</p>
 
         <br>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab10')">Categoria</a></li>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab20')">Usuários</a></li>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab30')">Endereço</a></li>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab40')">Administrador</a></li>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab50')">Preferencias</a></li>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab60')">Cursos</a></li>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab70')">Tipos Curso</a></li>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab80')">Analytics</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab10')">Categoria</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab20')">Usuários</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab30')">Endereço</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab40')">Administrador</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab50')">Preferencias</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab60')">Cursos</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab70')">Tipos Curso</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab80')">Analytics</a></li>
         <br>
         <br>
         <div class="imgs"><img id="bem-vindo" class="img-tab" src="../../assets/engenheiro.png" alt="BoasVindas" ></div>
@@ -111,7 +111,7 @@
 
     <!-- Categoria -->
     <!-- -------------------------------------------------------------- -->
-    <div id="tab10" class="tab-content info">
+    <div id="tab10" class="conteudo-tab info">
         <br>
         <h1>Categorias</h1>
         <p>Aqui você poderá registrar, ver e remover as categorias de costura do Khiata</p>
@@ -119,9 +119,9 @@
 
         <br>
 
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab11')">Mostrar categorias</a></li>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab12')">Criar categoria</a></li>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab13')">Remover categoria</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab11')">Mostrar categorias</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab12')">Criar categoria</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab13')">Remover categoria</a></li>
         <br>
         <br>
         <div class="imgs"><img id="categoria" class="img-tab" src="../../assets/gestao-de-pastas.png" alt="Categorias"></div>
@@ -130,7 +130,7 @@
 
 
 
-    <div id="tab11" class="tab-content">
+    <div id="tab11" class="conteudo-tab">
         <h2>Mostrar Categorias</h2>
         <p>Aqui você pode ver todas as categorias disponíveis.</p>
 
@@ -139,7 +139,7 @@
         </form>
     </div>
 
-    <div id="tab12" class="tab-content">
+    <div id="tab12" class="conteudo-tab">
         <h2>Criar Categoria</h2>
         <p>Formulário para criar uma nova categoria.</p>
 
@@ -169,7 +169,7 @@
 
     </div>
 
-    <div id="tab13" class="tab-content">
+    <div id="tab13" class="conteudo-tab">
         <h2>Remover Categoria</h2>
         <p>Selecione uma categoria para remover.</p>
 
@@ -191,19 +191,19 @@
 
     <!-- Usuário -->
     <!-- -------------------------------------------------------------- -->
-    <div id="tab20" class="tab-content info">
+    <div id="tab20" class="conteudo-tab info">
         <br>
         <h1>Usuários</h1>
         <p>Aqui você poderá ver, habilitar e desabilitar o premium dos usuários.</p>
         <p>Os usuários podem ser compradores ou costureiros que realizam todas as ações do nosso aplicativo</p>
         <br>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab21')">Mostrar usuários</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab21')">Mostrar usuários</a></li>
         <br><br>
 
         <div class="imgs"><img id="user" class="img-tab" src="../../assets/silhueta-de-multiplos-usuarios.png" alt="Usuários"></div>
     </div>
     
-    <div id="tab21" class="tab-content">
+    <div id="tab21" class="conteudo-tab">
         <h2>Mostrar Usuários</h2>
         <p>Lista de todos os usuários registrados.</p>
         
@@ -218,19 +218,19 @@
     
     <!-- Endereço -->
     <!-- ------------------------------------------------------------- -->
-    <div id="tab30" class="tab-content info">
+    <div id="tab30" class="conteudo-tab info">
         <br>
         <h1>Endereços</h1>
         <p>Aqui você poderá disponibilizar o endereço do comprador ao costureiro para que possa ocorrer a entrega.</p>
         <p>Por conta do endereço ser um dado sensível é importante que tenhamos esse controle para evitar golpes.</p>
         <br>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab31')">Disponibilizar endereço</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab31')">Disponibilizar endereço</a></li>
         <br><br>
         <div class="imgs"><img id="endereco" class="img-tab" src="../../assets/mapa.png" alt="Endereços"></div>
     </div>
 
 
-    <div id="tab31" class="tab-content">
+    <div id="tab31" class="conteudo-tab">
         <h2>Disponibilizar Endereço</h2>
         <p>Configurações para disponibilizar endereço de entrega.</p>
 
@@ -257,23 +257,23 @@
 
     <!-- Administrador -->
     <!-- ------------------------------------------------------------- -->
-    <div id="tab40" class="tab-content info">
+    <div id="tab40" class="conteudo-tab info">
         <br>
         <h1>Administradores</h1>
         <p>Aqui será possível criar, remover e visualizar os administradores que terão acesso a esta página e que poderão realiar diversas outras ações para o Khiata.</p>
 
         <br>
 
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab41')">Mostrar administradores</a></li>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab42')">Registrar administrador(a)</a></li>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab43')">Remover administrador(a)</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab41')">Mostrar administradores</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab42')">Registrar administrador(a)</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab43')">Remover administrador(a)</a></li>
         <br><br>
         <div class="imgs"><img id="admin" class="img-tab" src="../../assets/definicoes.png" alt="Administradores"></div>
 
     </div>
 
 
-    <div id="tab41" class="tab-content">
+    <div id="tab41" class="conteudo-tab">
         <h2>Mostrar Administradores</h2>
         <p>Lista de todos os administradores registrados.</p>
 
@@ -283,7 +283,7 @@
     </div>
 
 
-    <div id="tab42" class="tab-content">
+    <div id="tab42" class="conteudo-tab">
         <h2>Registrar administrador</h2>
         <p>Formulário para criar um administrador novo no sistema.</p>
 
@@ -313,7 +313,7 @@
     </div>
 
 
-    <div id="tab43" class="tab-content">
+    <div id="tab43" class="conteudo-tab">
         <h2>Remover administrador</h2>
         <p>Formulário para remover um administrador do sistema.</p>
         
@@ -338,20 +338,20 @@
 
     <!-- Preferência -->
     <!-- ------------------------------------------------------------- -->
-    <div id="tab50" class="tab-content info">
+    <div id="tab50" class="conteudo-tab info">
         <br>
         <h1>Preferências</h1>
         <p>Aqui você poderá adicionar e retirar preferências a usuários específicos, indicando produtos. </p>
 
         <br>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab51')">Alocar preferência em usuário</a></li>
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab52')">Desalocar preferência em usuário</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab51')">Alocar preferência em usuário</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab52')">Desalocar preferência em usuário</a></li>
         <br><br>
         <div class="imgs"><img id="pref" class="img-tab" src="../../assets/preferencias.png" alt="Preferências"></div>
 
     </div>
 
-    <div id="tab51" class="tab-content">
+    <div id="tab51" class="conteudo-tab">
         <h2>Alocar preferência</h2>
         <p>Formulário para atribuir uma categoria de preferência do usuário</p>
 
@@ -375,7 +375,7 @@
     </div>
 
 
-    <div id="tab52" class="tab-content">
+    <div id="tab52" class="conteudo-tab">
         <h2>Desalocar preferência</h2>
         <p>Formulário para remover uma categoria de preferência do usuário</p>
 
@@ -403,7 +403,7 @@
 
     <!-- Cursos -->
     <!-- ------------------------------------------------------------- -->
-    <div id="tab60" class="tab-content info">
+    <div id="tab60" class="conteudo-tab info">
         <br>
         <h1>Cursos</h1>
         <p>Aqui você poderá visualizar, adicionar e remover cursos para os usuários do Khiata</p>
@@ -411,11 +411,11 @@
 
         <br>
 
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab61')">Mostrar curso</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab61')">Mostrar curso</a></li>
 
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab62')">Registrar curso</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab62')">Registrar curso</a></li>
 
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab63')">Remover curso</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab63')">Remover curso</a></li>
         <br><br>
 
         <div class="imgs"><img id="curso" class="img-tab" src="../../assets/educacao.png" alt="Cursos"></div>
@@ -423,7 +423,7 @@
     </div>
 
 
-    <div id="tab61" class="tab-content">
+    <div id="tab61" class="conteudo-tab">
         <h2>Mostrar cursos</h2>
         <p>Aqui você poderá visualizar todos os cursos presentes no Khiata.</p>
 
@@ -435,7 +435,7 @@
     </div>
 
 
-    <div id="tab62" class="tab-content">
+    <div id="tab62" class="conteudo-tab">
         <h2>Registrar curso</h2>
         <p>Formulário para criação de um curso.</p>
 
@@ -458,7 +458,7 @@
     </div>
 
 
-    <div id="tab63" class="tab-content">
+    <div id="tab63" class="conteudo-tab">
         <h2>Remover curso</h2>
         <p>Formulário para remoção de um curso.</p>
 
@@ -481,17 +481,17 @@
 
     <!-- Tipo de curso -->
     <!-- ------------------------------------------------------------- -->
-    <div id="tab70" class="tab-content info">
+    <div id="tab70" class="conteudo-tab info">
         <br>
         <h1>Tipos de Cursos</h1>
         <p>Aqui você poderá visualizar, adicionar e remover tipos de curso que serão alocados nos cursos criando playlists.</p>
         <br>
 
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab71')">Mostrar tipos de curso</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab71')">Mostrar tipos de curso</a></li>
 
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab72')">Registrar tipo de curso</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab72')">Registrar tipo de curso</a></li>
 
-        <li class="content-item"><a href="#mensagem" onclick="showTab('tab73')">Remover tipo de curso</a></li>
+        <li class="item-conteudo"><a href="#mensagem" onclick="showTab('tab73')">Remover tipo de curso</a></li>
         <br><br>
 
         <div class="imgs">
@@ -501,7 +501,7 @@
     </div>
 
 
-    <div id="tab71" class="tab-content">
+    <div id="tab71" class="conteudo-tab">
         <h2>Mostrar tipos de cursos</h2>
         <p>Aqui você poderá visualizar todos os tipos de cursos presentes no Khiata.</p>
 
@@ -513,7 +513,7 @@
     </div>
 
 
-    <div id="tab72" class="tab-content">
+    <div id="tab72" class="conteudo-tab">
         <h2>Registrar tipo de curso</h2>
         <p>Formulário para criação de um tipo de curso.</p>
 
@@ -529,7 +529,7 @@
 
         </form>
     </div>
-    <div id="tab73" class="tab-content">
+    <div id="tab73" class="conteudo-tab">
         <h2>Remover tipo de curso</h2>
         <p>Formulário para remoção de um tipo de curso.</p>
 
@@ -553,14 +553,14 @@
 
         <!-- Conteúdo da página do segundo ano -->
 
-        <div id="tab80" class="tab-content info">
+        <div id="tab80" class="conteudo-tab info">
             <br>
             <h1>Analytics</h1>
             <p>Aqui você poderá visualizar dados relevantes sobre os usuários e o funcionamento do Khiata.</p>
             <br>
 
             <br>
-            <li class="content-item"><a href="#" target="-blank">Analisar</a></li>
+            <li class="item-conteudo"><a href="#" target="-blank">Analisar</a></li>
             <br><br>
 
             <div class="imgs"><img id="analytics" class="img-tab" src="../../assets/analytics.png" alt="Analytics"></div>
@@ -590,7 +590,7 @@
     }
 
     function showTab(tabId) {
-        var tabs = document.querySelectorAll('.tab-content');
+        var tabs = document.querySelectorAll('.conteudo-tab');
         tabs.forEach(function(tab) {
             tab.classList.remove('active');
         });

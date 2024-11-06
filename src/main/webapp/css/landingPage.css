@@ -207,7 +207,7 @@ body {
 }
 
 /* Container da seção Sobre Nós com layout flexível e espaçamento */
-.containerSobre {
+.container-sobre {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -289,7 +289,7 @@ body {
 }
 
 /* Contêiner principal com elementos decorativos */
-.bolaKhiata {
+.bola-khiata {
   position: relative;
   padding: 0;
   overflow: hidden; /* Esconde conteúdo que ultrapassa o contêiner */
@@ -302,8 +302,8 @@ body {
 }
 
 /* Círculos decorativos */
-.bolaKhiata::before,
-.bolaKhiata::after {
+.bola-khiata::before,
+.bola-khiata::after {
   content: ""; /* Adiciona um elemento vazio */
   position: absolute;
   border-radius: 50%;
@@ -311,14 +311,14 @@ body {
 }
 
 /* Arruma a posição das bolas*/
-.bolaKhiata::before {
+.bola-khiata::before {
   width: 350px;
   height: 350px;
   top: -100px;
   left: -100px;
 }
 
-.bolaKhiata::after {
+.bola-khiata::after {
   width: 300px;
   height: 300px;
   bottom: -150px;
@@ -326,7 +326,7 @@ body {
 }
 
 /* Estilização do conteúdo dentro da seção */
-.contentTMJ {
+.conteudo-tmj {
   display: flex;
   justify-content: space-between;
   margin: 6% 10%;
@@ -338,7 +338,7 @@ body {
 }
 
 /* Estilização para a área da esquerda */
-.left {
+.esquerda {
   color: var(--brancoHover);
   display: flex;
   flex-direction: column;
@@ -350,7 +350,7 @@ body {
 }
 
 /* Imagem dentro da área direita */
-.right img {
+.direita img {
   width: 100%;
   filter: drop-shadow(
     4px 4px 4px rgba(255, 255, 255, 0.925)
@@ -358,14 +358,14 @@ body {
 }
 
 /* Estilização da área direita */
-.right {
+.direita {
   width: 40%;
   display: flex;
   align-items: center;
 }
 
 /* Texto descritivo */
-#sobreKhiata {
+#sobre-khiata {
   margin-top: 15px;
   font-weight: 500;
   line-height: 1.8; /* Espaçamento da linha */
@@ -375,12 +375,12 @@ body {
 
 /* Ajustes responsivos para telas menores */
 @media screen and (max-width: 1280px) {
-  .bolaKhiata::before,
-  .bolaKhiata::after {
+  .bola-khiata::before,
+  .bola-khiata::after {
     background: #faaf544c;
   }
 
-  .contentTMJ {
+  .conteudo-tmj {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -389,7 +389,7 @@ body {
     max-width: 100%;
   }
 
-  .left {
+  .esquerda {
     max-width: 50%;
   }
 }
@@ -398,7 +398,7 @@ body {
 /* Inicio seção Funcionalidade */
 
 /* Ajustando tela do figma */
-.phone-screen {
+.tela-telefone {
   border-radius: 25px;
   border: 2px solid var(--amareloPrincipal);
   transition: 0.3s ease;
@@ -421,7 +421,7 @@ iframe {
 }
 
 /* Fundo do celular */
-.phone-interactive {
+.interacao-telefone {
   width: 250px;
   height: 560px;
   position: relative;
@@ -452,14 +452,14 @@ iframe {
   .funcionalidade {
     display: none;
   }
-  .esconderLinha {
+  .esconder-linha {
     display: none;
   }
 }
 
 /* ------------------------------------------------------------- */
 /* CARDS */
-.bodycard {
+.corpo-card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -469,8 +469,8 @@ iframe {
   color: #303030;
 }
 
-.title1card,
-.title2card {
+.titulo1-card,
+.titulo2-card {
   color: var(--cor-fundo);
   position: relative;
   font-size: 2em;
@@ -478,11 +478,11 @@ iframe {
   font-weight: bold;
 }
 
-.title1card {
+.titulo1-card {
   grid-area: title1;
 }
 
-.title2card {
+.titulo2-card {
   grid-area: title2;
 }
 
@@ -499,7 +499,7 @@ iframe {
 }
 
 /* Arrumando o tamanho do popup */
-.popup-content {
+.conteudo-popup {
   background-color: var(--brancoPrincipal);
   margin: 100px auto;
   padding: 40px;
@@ -514,7 +514,7 @@ iframe {
 }
 
 /* Icone para feixar o popup */
-.close-btn {
+.botao-fechar {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -524,12 +524,12 @@ iframe {
   transition: color 0.3s;
 }
 
-.close-btn:hover {
+.botao-fechar:hover {
   color: #ff4d4d;
 }
 
 /* Linha */
-.popup-header {
+.cabeca-popup {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -539,25 +539,25 @@ iframe {
 }
 
 /* Corpo do popup */
-.popup-body {
+.corpo-popup {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.popup-left,
-.popup-right {
+.esquerda-popup,
+.direita-popup {
   flex: 1;
   padding: 2rem;
 }
 
 /* Alinhando parte da esquerda */
-.popup-left {
+.esquerda-popup {
   text-align: center;
 }
 
 /* Arrumando imagem do popup */
-.popup-left img {
+.esquerda-popup img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -567,57 +567,57 @@ iframe {
   transition: border-color 0.3s;
 }
 
-.popup-left img:hover {
+.esquerda-popup img:hover {
   border-color: #333;
 }
 
-.popup-desc {
+.descricao-popup {
   font-size: 1rem;
   color: #666;
   margin-top: 10px;
 }
 
-.popup-right p {
+.direita-popup p {
   font-size: 1rem;
   color: #333;
 }
 
-.popup-right p strong {
+.direita-popup p strong {
   color: #555;
 }
 
-.popup-content p {
+.conteudo-popup p {
   margin: 0.5rem 0;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .popup-content {
+  .conteudo-popup {
     width: 95%;
     padding: 0;
     margin: 5px auto;
   }
-  .close-btn {
+  .botao-fechar {
     font-size: 24px;
     margin-top: 5px;
   }
 
-  .popup-body {
+  .corpo-popup {
     flex-direction: column;
   }
-  .popup-left img {
+  .esquerda-popup img {
     width: 15%;
     height: auto;
   }
-  .popup-left,
-  .popup-right {
+  .esquerda-popup,
+  .direita-popup {
     padding: 0;
   }
-  .popup-right p {
+  .direita-popup p {
     font-size: 0.8rem;
     padding: 0 10px;
   }
-  .popup-desc {
+  .descricao-popup {
     font-size: 0.8rem;
     padding: 0 25px;
   }
@@ -625,60 +625,60 @@ iframe {
 
 /* FIM DOS POPUPS */
 
-.container_card1 {
+.container-card1 {
   grid-area: card1;
   height: 0px;
 }
 
-.container_card2 {
+.container-card2 {
   grid-area: card2;
   height: 0px;
 }
 
-.container_card3 {
+.container-card3 {
   grid-area: card3;
   height: 0px;
 }
 
-.container_card4 {
+.container-card4 {
   grid-area: card4;
   height: 0px;
 }
 
-.container_card5 {
+.container-card5 {
   grid-area: card5;
   height: 0px;
 }
 
-.container_card6 {
+.container-card6 {
   grid-area: card6;
   height: 0px;
 }
 
-.container_card7 {
+.container-card7 {
   grid-area: card7;
   height: 0px;
 }
 
-.container_card8 {
+.container-card8 {
   grid-area: card8;
   margin-left: 250px;
   height: 0px;
 }
 
-.container_card9 {
+.container-card9 {
   grid-area: card9;
   margin-left: 30px;
   height: 0px;
 }
 
-.container_card10 {
+.container-card10 {
   grid-area: card10;
   margin-left: 250px;
   height: 0px;
 }
 
-.container_card11 {
+.container-card11 {
   grid-area: card11;
   margin-left: 30px;
   height: 0px;
@@ -691,7 +691,7 @@ iframe {
   gap: 40px;
 }
 
-.all_cards {
+.todos-cards {
   display: grid;
   justify-content: center;
   gap: 40px;
@@ -733,7 +733,7 @@ iframe {
 }
 
 /* Arrumando todos os cards */
-.card_1 {
+.card-1 {
   position: relative;
   z-index: 1;
   transition: 0.5s;
@@ -768,7 +768,7 @@ iframe {
 /* 1º ano */
 
 /* Transição para não ter uma mudança brusca na tela do usuário */
-.card .contentcard {
+.card .conteudo-card {
   transition: transform 0.5s ease-in-out;
 }
 
@@ -803,17 +803,17 @@ iframe {
 /* card code*/
 
 /* Adicionando estilização em todos os cards */
-.container_card1 .card.card1_2,
-.container_card2 .card.card2_2,
-.container_card3 .card.card3_2,
-.container_card4 .card.card4_2,
-.container_card5 .card.card5_2,
-.container_card6 .card.card6_2,
-.container_card7 .card.card7_2,
-.container_card8 .card.card8_2,
-.container_card9 .card.card9_2,
-.container_card10 .card.card10_2,
-.container_card11 .card.card11_2 {
+.container-card1 .card.card1_2,
+.container-card2 .card.card2_2,
+.container-card3 .card.card3_2,
+.container-card4 .card.card4_2,
+.container-card5 .card.card5_2,
+.container-card6 .card.card6_2,
+.container-card7 .card.card7_2,
+.container-card8 .card.card8_2,
+.container-card9 .card.card9_2,
+.container-card10 .card.card10_2,
+.container-card11 .card.card11_2 {
   position: relative;
   display: flex;
   height: 195px;
@@ -827,65 +827,65 @@ iframe {
 }
 
 /*Modificando borda quando passa o mouse por cima */
-.container_card1:hover .imagem,
-.container_card2:hover .imagem,
-.container_card3:hover .imagem,
-.container_card4:hover .imagem,
-.container_card5:hover .imagem,
-.container_card6:hover .imagem,
-.container_card7:hover .imagem,
-.container_card8:hover .imagem,
-.container_card9:hover .imagem,
-.container_card10:hover .imagem,
-.container_card11:hover .imagem {
+.container-card1:hover .imagem,
+.container-card2:hover .imagem,
+.container-card3:hover .imagem,
+.container-card4:hover .imagem,
+.container-card5:hover .imagem,
+.container-card6:hover .imagem,
+.container-card7:hover .imagem,
+.container-card8:hover .imagem,
+.container-card9:hover .imagem,
+.container-card10:hover .imagem,
+.container-card11:hover .imagem {
   border-radius: 25px 25px 0 0;
 }
 
 /* Mexer no card quando passa o mouse por cima */
-.container_card1:hover .card.card_1,
-.container_card2:hover .card.card_1,
-.container_card3:hover .card.card_1,
-.container_card4:hover .card.card_1,
-.container_card5:hover .card.card_1,
-.container_card6:hover .card.card_1,
-.container_card7:hover .card.card_1,
-.container_card8:hover .card.card_1,
-.container_card9:hover .card.card_1,
-.container_card10:hover .card.card_1,
-.container_card11:hover .card.card_1 {
+.container-card1:hover .card.card-1,
+.container-card2:hover .card.card-1,
+.container-card3:hover .card.card-1,
+.container-card4:hover .card.card-1,
+.container-card5:hover .card.card-1,
+.container-card6:hover .card.card-1,
+.container-card7:hover .card.card-1,
+.container-card8:hover .card.card-1,
+.container-card9:hover .card.card-1,
+.container-card10:hover .card.card-1,
+.container-card11:hover .card.card-1 {
   transform: translateY(0px);
 }
 
 /* Borda */
 /* Parte de baixo do card descer quando passa o mouse por cima */
-.container_card1:hover .card.card1_2,
-.container_card2:hover .card.card2_2,
-.container_card3:hover .card.card3_2,
-.container_card4:hover .card.card4_2,
-.container_card5:hover .card.card5_2,
-.container_card6:hover .card.card6_2,
-.container_card7:hover .card.card7_2,
-.container_card8:hover .card.card8_2,
-.container_card9:hover .card.card9_2,
-.container_card10:hover .card.card10_2,
-.container_card11:hover .card.card11_2 {
+.container-card1:hover .card.card1_2,
+.container-card2:hover .card.card2_2,
+.container-card3:hover .card.card3_2,
+.container-card4:hover .card.card4_2,
+.container-card5:hover .card.card5_2,
+.container-card6:hover .card.card6_2,
+.container-card7:hover .card.card7_2,
+.container-card8:hover .card.card8_2,
+.container-card9:hover .card.card9_2,
+.container-card10:hover .card.card10_2,
+.container-card11:hover .card.card11_2 {
   border-radius: 0 0 25px 25px;
   transform: translateY(0px);
 }
 
 /* Mudando o lugar para onde o content do container vai quando passa o mouse por cima.
   No caso o texto do card */
-.container_card1:hover .card.card1_2 .contentcard,
-.container_card2:hover .card.card2_2 .contentcard,
-.container_card3:hover .card.card3_2 .contentcard,
-.container_card4:hover .card.card4_2 .contentcard,
-.container_card5:hover .card.card5_2 .contentcard,
-.container_card6:hover .card.card6_2 .contentcard,
-.container_card7:hover .card.card7_2 .contentcard,
-.container_card8:hover .card.card8_2 .contentcard,
-.container_card9:hover .card.card9_2 .contentcard,
-.container_card10:hover .card.card10_2 .contentcard,
-.container_card11:hover .card.card11_2 .contentcard {
+.container-card1:hover .card.card1_2 .conteudo-card,
+.container-card2:hover .card.card2_2 .conteudo-card,
+.container-card3:hover .card.card3_2 .conteudo-card,
+.container-card4:hover .card.card4_2 .conteudo-card,
+.container-card5:hover .card.card5_2 .conteudo-card,
+.container-card6:hover .card.card6_2 .conteudo-card,
+.container-card7:hover .card.card7_2 .conteudo-card,
+.container-card8:hover .card.card8_2 .conteudo-card,
+.container-card9:hover .card.card9_2 .conteudo-card,
+.container-card10:hover .card.card10_2 .conteudo-card,
+.container-card11:hover .card.card11_2 .conteudo-card {
   transform: translateY(-30px);
 }
 
@@ -910,39 +910,39 @@ iframe {
     height: 120px;
   }
 
-  .contentcard p {
+  .conteudo-card p {
     display: none;
   }
 
   /* card com responsividade 1 */
-  .container_card1 .card.card1_2,
-  .container_card2 .card.card2_2,
-  .container_card3 .card.card3_2,
-  .container_card4 .card.card4_2,
-  .container_card5 .card.card5_2,
-  .container_card6 .card.card6_2,
-  .container_card7 .card.card7_2,
-  .container_card8 .card.card8_2,
-  .container_card9 .card.card9_2,
-  .container_card10 .card.card10_2,
-  .container_card11 .card.card11_2 {
+  .container-card1 .card.card1_2,
+  .container-card2 .card.card2_2,
+  .container-card3 .card.card3_2,
+  .container-card4 .card.card4_2,
+  .container-card5 .card.card5_2,
+  .container-card6 .card.card6_2,
+  .container-card7 .card.card7_2,
+  .container-card8 .card.card8_2,
+  .container-card9 .card.card9_2,
+  .container-card10 .card.card10_2,
+  .container-card11 .card.card11_2 {
     height: 160px;
     transform: translateY(-75px);
     border-radius: 25px;
     /* background-color:; */
   }
 
-  .container_card1:hover .card.card1_2 .contentcard,
-  .container_card2:hover .card.card2_2 .contentcard,
-  .container_card3:hover .card.card3_2 .contentcard,
-  .container_card4:hover .card.card4_2 .contentcard,
-  .container_card5:hover .card.card5_2 .contentcard,
-  .container_card6:hover .card.card6_2 .contentcard,
-  .container_card7:hover .card.card7_2 .contentcard,
-  .container_card8:hover .card.card8_2 .contentcard,
-  .container_card9:hover .card.card9_2 .contentcard,
-  .container_card10:hover .card.card10_2 .contentcard,
-  .container_card11:hover .card.card11_2 .contentcard {
+  .container-card1:hover .card.card1_2 .conteudo-card,
+  .container-card2:hover .card.card2_2 .conteudo-card,
+  .container-card3:hover .card.card3_2 .conteudo-card,
+  .container-card4:hover .card.card4_2 .conteudo-card,
+  .container-card5:hover .card.card5_2 .conteudo-card,
+  .container-card6:hover .card.card6_2 .conteudo-card,
+  .container-card7:hover .card.card7_2 .conteudo-card,
+  .container-card8:hover .card.card8_2 .conteudo-card,
+  .container-card9:hover .card.card9_2 .conteudo-card,
+  .container-card10:hover .card.card10_2 .conteudo-card,
+  .container-card11:hover .card.card11_2 .conteudo-card {
     transform: translateY(-40px);
   }
 }
@@ -951,7 +951,7 @@ iframe {
 
 /* Responsividade 1113px */
 @media (max-width: 1113px) {
-  .all_cards {
+  .todos-cards {
     grid-template-rows: 50px 300px 390px 50px 300px 300px;
     grid-template-areas:
       "title1 title1 title1 title1"
@@ -980,38 +980,38 @@ iframe {
     height: 100px;
   }
 
-  .contentcard h4,
-  .contentcard p {
+  .conteudo-card h4,
+  .conteudo-card p {
     display: none;
   }
 
   /* card com responsividade 1 */
-  .container_card1 .card.card1_2,
-  .container_card2 .card.card2_2,
-  .container_card3 .card.card3_2,
-  .container_card4 .card.card4_2,
-  .container_card5 .card.card5_2,
-  .container_card6 .card.card6_2,
-  .container_card7 .card.card7_2,
-  .container_card8 .card.card8_2,
-  .container_card9 .card.card9_2,
-  .container_card10 .card.card10_2,
-  .container_card11 .card.card11_2 {
+  .container-card1 .card.card1_2,
+  .container-card2 .card.card2_2,
+  .container-card3 .card.card3_2,
+  .container-card4 .card.card4_2,
+  .container-card5 .card.card5_2,
+  .container-card6 .card.card6_2,
+  .container-card7 .card.card7_2,
+  .container-card8 .card.card8_2,
+  .container-card9 .card.card9_2,
+  .container-card10 .card.card10_2,
+  .container-card11 .card.card11_2 {
     height: 140px;
     transform: translateY(-41px);
   }
 
-  .container_card1:hover .card.card1_2 .contentcard,
-  .container_card2:hover .card.card2_2 .contentcard,
-  .container_card3:hover .card.card3_2 .contentcard,
-  .container_card4:hover .card.card4_2 .contentcard,
-  .container_card5:hover .card.card5_2 .contentcard,
-  .container_card6:hover .card.card6_2 .contentcard,
-  .container_card7:hover .card.card7_2 .contentcard,
-  .container_card8:hover .card.card8_2 .contentcard,
-  .container_card9:hover .card.card9_2 .contentcard,
-  .container_card10:hover .card.card10_2 .contentcard,
-  .container_card11:hover .card.card11_2 .contentcard {
+  .container-card1:hover .card.card1_2 .conteudo-card,
+  .container-card2:hover .card.card2_2 .conteudo-card,
+  .container-card3:hover .card.card3_2 .conteudo-card,
+  .container-card4:hover .card.card4_2 .conteudo-card,
+  .container-card5:hover .card.card5_2 .conteudo-card,
+  .container-card6:hover .card.card6_2 .conteudo-card,
+  .container-card7:hover .card.card7_2 .conteudo-card,
+  .container-card8:hover .card.card8_2 .conteudo-card,
+  .container-card9:hover .card.card9_2 .conteudo-card,
+  .container-card10:hover .card.card10_2 .conteudo-card,
+  .container-card11:hover .card.card11_2 .conteudo-card {
     transform: translateY(-40px);
   }
 
@@ -1019,10 +1019,10 @@ iframe {
 
   /* Responsividade *** */
   @media (max-width: 950px) {
-    .container_card8,
-    .container_card9,
-    .container_card10,
-    .container_card11 {
+    .container-card8,
+    .container-card9,
+    .container-card10,
+    .container-card11 {
       margin-left: 0;
     }
 
@@ -1032,7 +1032,7 @@ iframe {
       flex-wrap: wrap;
     }
 
-    .all_cards {
+    .todos-cards {
       justify-content: center;
       grid-template-rows: 50px repeat(2, 180px) 480px 0 repeat(2, 220px);
       grid-template-columns: repeat(2, 220px);
@@ -1065,37 +1065,37 @@ iframe {
       height: 100px;
     }
 
-    .contentcard h4 {
+    .conteudo-card h4 {
       display: none;
     }
 
     /* card com responsividade 1 */
-    .container_card1 .card.card1_2,
-    .container_card2 .card.card2_2,
-    .container_card3 .card.card3_2,
-    .container_card4 .card.card4_2,
-    .container_card5 .card.card5_2,
-    .container_card6 .card.card6_2,
-    .container_card7 .card.card7_2,
-    .container_card8 .card.card8_2,
-    .container_card9 .card.card9_2,
-    .container_card10 .card.card10_2,
-    .container_card11 .card.card11_2 {
+    .container-card1 .card.card1_2,
+    .container-card2 .card.card2_2,
+    .container-card3 .card.card3_2,
+    .container-card4 .card.card4_2,
+    .container-card5 .card.card5_2,
+    .container-card6 .card.card6_2,
+    .container-card7 .card.card7_2,
+    .container-card8 .card.card8_2,
+    .container-card9 .card.card9_2,
+    .container-card10 .card.card10_2,
+    .container-card11 .card.card11_2 {
       height: 140px;
       transform: translateY(-40px);
     }
 
-    .container_card1:hover .card.card1_2 .contentcard,
-    .container_card2:hover .card.card2_2 .contentcard,
-    .container_card3:hover .card.card3_2 .contentcard,
-    .container_card4:hover .card.card4_2 .contentcard,
-    .container_card5:hover .card.card5_2 .contentcard,
-    .container_card6:hover .card.card6_2 .contentcard,
-    .container_card7:hover .card.card7_2 .contentcard,
-    .container_card8:hover .card.card8_2 .contentcard,
-    .container_card9:hover .card.card9_2 .contentcard,
-    .container_card10:hover .card.card10_2 .contentcard,
-    .container_card11:hover .card.card11_2 .contentcard {
+    .container-card1:hover .card.card1_2 .conteudo-card,
+    .container-card2:hover .card.card2_2 .conteudo-card,
+    .container-card3:hover .card.card3_2 .conteudo-card,
+    .container-card4:hover .card.card4_2 .conteudo-card,
+    .container-card5:hover .card.card5_2 .conteudo-card,
+    .container-card6:hover .card.card6_2 .conteudo-card,
+    .container-card7:hover .card.card7_2 .conteudo-card,
+    .container-card8:hover .card.card8_2 .conteudo-card,
+    .container-card9:hover .card.card9_2 .conteudo-card,
+    .container-card10:hover .card.card10_2 .conteudo-card,
+    .container-card11:hover .card.card11_2 .conteudo-card {
       transform: translateY(-40px);
     }
   }
@@ -1104,10 +1104,10 @@ iframe {
 
   /* Responsividade 475 */
   @media (max-width: 475px) {
-    .container_card8,
-    .container_card9,
-    .container_card10,
-    .container_card11 {
+    .container-card8,
+    .container-card9,
+    .container-card10,
+    .container-card11 {
       margin-left: 0;
     }
 
@@ -1117,7 +1117,7 @@ iframe {
       flex-wrap: wrap;
     }
 
-    .all_cards {
+    .todos-cards {
       justify-content: center;
       grid-template-rows: 50px repeat(4, 200px) 815px 50px repeat(2, 220px);
       grid-template-columns: 220px;
@@ -1153,38 +1153,38 @@ iframe {
       height: 100px;
     }
 
-    .contentcard h4,
-    .contentcard p {
+    .conteudo-card h4,
+    .conteudo-card p {
       display: none;
     }
 
     /* card com responsividade 1 */
-    .container_card1 .card.card1_2,
-    .container_card2 .card.card2_2,
-    .container_card3 .card.card3_2,
-    .container_card4 .card.card4_2,
-    .container_card5 .card.card5_2,
-    .container_card6 .card.card6_2,
-    .container_card7 .card.card7_2,
-    .container_card8 .card.card8_2,
-    .container_card9 .card.card9_2,
-    .container_card10 .card.card10_2,
-    .container_card11 .card.card11_2 {
+    .container-card1 .card.card1_2,
+    .container-card2 .card.card2_2,
+    .container-card3 .card.card3_2,
+    .container-card4 .card.card4_2,
+    .container-card5 .card.card5_2,
+    .container-card6 .card.card6_2,
+    .container-card7 .card.card7_2,
+    .container-card8 .card.card8_2,
+    .container-card9 .card.card9_2,
+    .container-card10 .card.card10_2,
+    .container-card11 .card.card11_2 {
       height: 140px;
       transform: translateY(-40px);
     }
 
-    .container_card1:hover .card.card1_2 .contentcard,
-    .container_card2:hover .card.card2_2 .contentcard,
-    .container_card3:hover .card.card3_2 .contentcard,
-    .container_card4:hover .card.card4_2 .contentcard,
-    .container_card5:hover .card.card5_2 .contentcard,
-    .container_card6:hover .card.card6_2 .contentcard,
-    .container_card7:hover .card.card7_2 .contentcard,
-    .container_card8:hover .card.card8_2 .contentcard,
-    .container_card9:hover .card.card9_2 .contentcard,
-    .container_card10:hover .card.card10_2 .contentcard,
-    .container_card11:hover .card.card11_2 .contentcard {
+    .container-card1:hover .card.card1_2 .conteudo-card,
+    .container-card2:hover .card.card2_2 .conteudo-card,
+    .container-card3:hover .card.card3_2 .conteudo-card,
+    .container-card4:hover .card.card4_2 .conteudo-card,
+    .container-card5:hover .card.card5_2 .conteudo-card,
+    .container-card6:hover .card.card6_2 .conteudo-card,
+    .container-card7:hover .card.card7_2 .conteudo-card,
+    .container-card8:hover .card.card8_2 .conteudo-card,
+    .container-card9:hover .card.card9_2 .conteudo-card,
+    .container-card10:hover .card.card10_2 .conteudo-card,
+    .container-card11:hover .card.card11_2 .conteudo-card {
       transform: translateY(-40px);
     }
   }
@@ -1198,7 +1198,7 @@ iframe {
   font-family: Arial, sans-serif;
 }
 
-.footer-container {
+.container-footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; /* Permite que os elementos quebrem linha */
@@ -1249,7 +1249,7 @@ iframe {
   text-decoration: underline; /* Sublinha ao passar o mouse */
 }
 
-.footer-bottom {
+.botao-footer {
   text-align: center;
   margin-top: 20px;
   font-size: 0.9em;
@@ -1257,7 +1257,7 @@ iframe {
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
-  .footer-container {
+  .container-footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -1280,7 +1280,7 @@ iframe {
     font-size: 1.1em;
   }
 
-  .footer-bottom {
+  .botao-footer {
     font-size: 0.8em;
   }
 }
