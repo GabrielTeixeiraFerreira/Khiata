@@ -560,7 +560,7 @@
             <br>
 
             <br>
-            <li class="item-conteudo"><a href="#" target="-blank">Analisar</a></li>
+            <li class="item-conteudo"><a href="ec2-54-161-187-70.compute-1.amazonaws.com:3000/" target="-blank">Analisar</a></li>
             <br><br>
 
             <div class="imgs"><img id="analytics" class="img-tab" src="../../assets/analytics.png" alt="Analytics"></div>
