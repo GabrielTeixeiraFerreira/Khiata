@@ -29,7 +29,7 @@ cd seu-repositorio
 ### Configurando o Banco de Dados
 1. Inicie o PostgreSQL e crie um banco de dados:
 ```sql
-CREATE DATABASE nome_do_banco;
+CREATE DATABASE khiata;
 ```
 2. Atualize o arquivo de configuração (`application.properties` ou `application.yml`) com as credenciais do banco.
 
@@ -59,9 +59,6 @@ npm install
 npm start
 ```
 O projeto estará acessível em `http://localhost:3000`
-
-## Trello
-Para acompanhar as tarefas do projeto, acesse o [Trello](https://trello.com/) e utilize o board `Nome do Board`.
 
 ## Copyright
 Este projeto é de propriedade de [Seu Nome ou Empresa]. Todos os direitos reservados. Nenhuma parte deste projeto pode ser copiada, modificada ou distribuída sem permissão prévia.
