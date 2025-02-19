@@ -19,5 +19,5 @@ Antes de iniciar a instalação, certifique-se de ter os seguintes softwares ins
 - **IDE recomendada**: IntelliJ IDEA ou VS Code
 
 ## Copyright
-Este projeto é de propriedade de [Seu Nome ou Empresa]. Todos os direitos reservados. Nenhuma parte deste projeto pode ser copiada, modificada ou distribuída sem permissão prévia.
+Este projeto é de propriedade de todos os membros mostrados na Landing Page Todos os direitos reservados. Nenhuma parte deste projeto pode ser copiada, modificada ou distribuída sem permissão prévia.
 
